@@ -13430,6 +13430,7 @@ core/modules/package_manager/tests/src/Traits/AssertPreconditionsTrait.php
 core/modules/package_manager/tests/src/Traits/PackageManagerBypassTestTrait.php
 core/modules/package_manager/tests/src/Traits/ComposerStagerTestTrait.php
 core/modules/package_manager/tests/src/Traits/ComposerInstallersTrait.php
+core/modules/package_manager/tests/src/Build/PackageInstallDirectWriteTest.php
 core/modules/package_manager/tests/src/Build/PackageInstallTest.php
 core/modules/package_manager/tests/src/Build/TemplateProjectTestBase.php
 core/modules/package_manager/tests/src/Build/PackageInstallSubmoduleTest.php
@@ -17928,6 +17929,7 @@ core/lib/Drupal/Core/Test/TestRun.php
 core/lib/Drupal/Core/Test/HttpClientMiddleware/TestHttpClientMiddleware.php
 core/lib/Drupal/Core/Test/FunctionalTestSetupTrait.php
 core/lib/Drupal/Core/Test/EnvironmentCleaner.php
+core/lib/Drupal/Core/Test/PhpUnitTestDiscoveryTracer.php
 core/lib/Drupal/Core/Test/JUnitConverter.php
 core/lib/Drupal/Core/Test/AssertMailTrait.php
 core/lib/Drupal/Core/Test/RunTests/TestFileParser.php
