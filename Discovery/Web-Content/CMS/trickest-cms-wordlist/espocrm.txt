@@ -829,6 +829,7 @@ client/src/handlers/working-time-range.js
 client/src/handlers/note/record-detail-setup.js
 client/src/handlers/import.js
 client/src/handlers/admin/address-country/populate-defaults.js
+client/src/handlers/create-related/set-parent.js
 client/src/handlers/login.js
 client/src/handlers/navbar-menu.js
 client/src/handlers/select-related/same-account-many.js
@@ -2758,6 +2759,7 @@ application/Espo/Core/Formula/Functions/RecordGroup/AttributeType.php
 application/Espo/Core/Formula/Functions/RecordGroup/UpdateRelationColumnType.php
 application/Espo/Core/Formula/Functions/RecordGroup/DeleteType.php
 application/Espo/Core/Formula/Functions/RecordGroup/RelationColumnType.php
+application/Espo/Core/Formula/Functions/RecordGroup/Util/FindQueryUtil.php
 application/Espo/Core/Formula/Functions/RecordGroup/FindManyType.php
 application/Espo/Core/Formula/Functions/RecordGroup/UpdateType.php
 application/Espo/Core/Formula/Functions/RecordGroup/CreateType.php
@@ -7259,16 +7261,20 @@ application/Espo/Modules/Crm/Hooks/MassEmail/DeleteQueue.php
 application/Espo/Modules/Crm/Hooks/Call/Users.php
 application/Espo/Modules/Crm/Hooks/Call/Uid.php
 application/Espo/Modules/Crm/Hooks/Call/ParentLink.php
+application/Espo/Modules/Crm/Hooks/Call/CalendarWebSocket.php
 application/Espo/Modules/Crm/Hooks/CaseObj/IsInternal.php
 application/Espo/Modules/Crm/Hooks/CaseObj/Contacts.php
 application/Espo/Modules/Crm/Hooks/Task/DateCompleted.php
 application/Espo/Modules/Crm/Hooks/Task/ParentLink.php
+application/Espo/Modules/Crm/Hooks/Task/CalendarWebSocket.php
+application/Espo/Modules/Crm/Hooks/Common/CalendarWebSocket.php
 application/Espo/Modules/Crm/Hooks/KnowledgeBaseArticle/SetBodyPlain.php
 application/Espo/Modules/Crm/Hooks/KnowledgeBaseArticle/SetOrder.php
 application/Espo/Modules/Crm/Hooks/Meeting/Users.php
 application/Espo/Modules/Crm/Hooks/Meeting/Uid.php
 application/Espo/Modules/Crm/Hooks/Meeting/EmailCreatedEvent.php
 application/Espo/Modules/Crm/Hooks/Meeting/ParentLink.php
+application/Espo/Modules/Crm/Hooks/Meeting/CalendarWebSocket.php
 application/Espo/Modules/Crm/Hooks/Account/TargetList.php
 application/Espo/Modules/Crm/Hooks/Account/Contacts.php
 application/Espo/Modules/Crm/Hooks/Contact/Accounts.php
@@ -7856,6 +7862,7 @@ application/Espo/Tools/CategoryTree/RebuildPaths.php
 application/Espo/Tools/CategoryTree/MoveService.php
 application/Espo/Tools/CategoryTree/Move/MoveParams.php
 application/Espo/Tools/CategoryTree/Move/LoopReferenceChecker.php
+application/Espo/Tools/CategoryTree/Record/ReadTreeParams.php
 application/Espo/Tools/UserSecurity/ApiService.php
 application/Espo/Tools/UserSecurity/TwoFactor/SmsService.php
 application/Espo/Tools/UserSecurity/TwoFactor/EmailService.php
