@@ -7800,6 +7800,7 @@ admin-dev/themes/new-theme/scss/pages/product/_multi_shop_list.scss
 admin-dev/themes/new-theme/scss/pages/product/products_catalog.scss
 admin-dev/themes/new-theme/scss/pages/product/product_page.scss
 admin-dev/themes/new-theme/scss/pages/_invoices.scss
+admin-dev/themes/new-theme/scss/pages/_themes_import.scss
 admin-dev/themes/new-theme/scss/pages/stock/stock_page.scss
 admin-dev/themes/new-theme/scss/pages/_customer.scss
 admin-dev/themes/new-theme/scss/pages/_modules.scss
@@ -11264,12 +11265,16 @@ tests/UI/campaigns/functional/BO/03_catalog/05_brandsAndSuppliers/suppliers/02_f
 tests/UI/campaigns/functional/BO/03_catalog/05_brandsAndSuppliers/suppliers/04_paginationSortAndBulkActions.ts
 tests/UI/campaigns/functional/BO/03_catalog/05_brandsAndSuppliers/suppliers/01_CRUDSupplier.ts
 tests/UI/campaigns/functional/BO/03_catalog/07_discounts/01_cartRules/02_sortAndPaginationCartRule.ts
+tests/UI/campaigns/functional/BO/03_catalog/07_discounts/01_cartRules/01_CRUDCartRule/03_actions/09_applyDiscountToSelectedProduct.ts
 tests/UI/campaigns/functional/BO/03_catalog/07_discounts/01_cartRules/01_CRUDCartRule/03_actions/03_applyDiscountPercent.ts
 tests/UI/campaigns/functional/BO/03_catalog/07_discounts/01_cartRules/01_CRUDCartRule/03_actions/04_applyDiscountAmount.ts
+tests/UI/campaigns/functional/BO/03_catalog/07_discounts/01_cartRules/01_CRUDCartRule/03_actions/11_sendFreeGift.ts
 tests/UI/campaigns/functional/BO/03_catalog/07_discounts/01_cartRules/01_CRUDCartRule/03_actions/02_freeShipping.ts
 tests/UI/campaigns/functional/BO/03_catalog/07_discounts/01_cartRules/01_CRUDCartRule/03_actions/01_applyToSpecificProduct.ts
+tests/UI/campaigns/functional/BO/03_catalog/07_discounts/01_cartRules/01_CRUDCartRule/03_actions/08_applyDiscountToCheapestProduct.ts
 tests/UI/campaigns/functional/BO/03_catalog/07_discounts/01_cartRules/01_CRUDCartRule/03_actions/05_applyDiscountNone.ts
 tests/UI/campaigns/functional/BO/03_catalog/07_discounts/01_cartRules/01_CRUDCartRule/03_actions/07_applyDiscountToSpecificProduct.ts
+tests/UI/campaigns/functional/BO/03_catalog/07_discounts/01_cartRules/01_CRUDCartRule/03_actions/10_excludeDiscountedProducts.ts
 tests/UI/campaigns/functional/BO/03_catalog/07_discounts/01_cartRules/01_CRUDCartRule/03_actions/06_applyDiscountToOrderWithoutShipping.ts
 tests/UI/campaigns/functional/BO/03_catalog/07_discounts/01_cartRules/01_CRUDCartRule/01_information/02_enableDisablePartialUse.ts
 tests/UI/campaigns/functional/BO/03_catalog/07_discounts/01_cartRules/01_CRUDCartRule/01_information/01_withAndWithoutCode.ts
@@ -12058,6 +12063,7 @@ tests/Unit/Classes/ValidateCoreTest.php
 tests/Unit/Classes/ImageManagerTest.php
 tests/Unit/Classes/form/AbstractFormTest.php
 tests/Unit/Classes/form/FormFieldTest.php
+tests/Unit/Classes/DispatcherTest.php
 tests/Unit/Classes/ModuleGraphTest.php
 tests/Unit/Classes/RequestSqlTest.php
 tests/Unit/Adapter/Meta/UrlSchemaDataConfigurationTest.php
@@ -12118,6 +12124,7 @@ tests/Unit/Adapter/Security/CommandHandler/BulkDeleteEmployeesSessionHandlerTest
 tests/Unit/Adapter/Security/CommandHandler/DeleteCustomerSessionHandlerTest.php
 tests/Unit/Adapter/Security/CommandHandler/BulkDeleteCustomersSessionHandlerTest.php
 tests/Unit/Adapter/Customer/CustomerConfigurationTest.php
+tests/Unit/Adapter/Routes/RouteValidatorTest.php
 tests/Unit/Adapter/Webservice/WebserviceConfigurationTest.php
 tests/Unit/phpunit.xml
 tests/index.php
