@@ -458,6 +458,7 @@ dev/setup/sonarqube/README.md
 dev/setup/phpunit/README
 dev/setup/phpunit/PHPUNIT.BAT
 dev/setup/phpunit/setup_conf.sh
+dev/setup/logrotate.d/logrotate_dolibarr_log
 dev/setup/codesniffer/ruleset.xml
 dev/setup/codesniffer/README
 dev/setup/codesniffer/php.ini
@@ -2243,7 +2244,6 @@ htdocs/intracommreport/lib/intracommreport.lib.php
 htdocs/datapolicy/modulebuilder.txt
 htdocs/datapolicy/README.md
 htdocs/datapolicy/admin/setup.php
-htdocs/datapolicy/class/datapolicy.class.php
 htdocs/datapolicy/class/datapolicycron.class.php
 htdocs/datapolicy/lib/datapolicy.lib.php
 htdocs/adherents/subscription.php
@@ -2471,6 +2471,7 @@ htdocs/admin/paymentbybanktransfer.php
 htdocs/admin/clicktodial.php
 htdocs/admin/deliverydet_extrafields.php
 htdocs/admin/expensereport_rules.php
+htdocs/admin/security_headers_http.php
 htdocs/admin/bom.php
 htdocs/admin/payment.php
 htdocs/admin/emailcollector_card.php
@@ -3750,6 +3751,7 @@ htdocs/langs/es_PY/exports.lang
 htdocs/langs/es_PY/intracommreport.lang
 htdocs/langs/en_IE/other.lang
 htdocs/langs/en_IE/accountancy.lang
+htdocs/langs/en_IE/datapolicy.lang
 htdocs/langs/en_IE/admin.lang
 htdocs/langs/en_IE/products.lang
 htdocs/langs/en_IE/ticket.lang
@@ -5558,7 +5560,6 @@ htdocs/langs/es_MX/recruitment.lang
 htdocs/langs/es_MX/accountancy.lang
 htdocs/langs/es_MX/orders.lang
 htdocs/langs/es_MX/members.lang
-htdocs/langs/es_MX/datapolicy.lang
 htdocs/langs/es_MX/compta.lang
 htdocs/langs/es_MX/holiday.lang
 htdocs/langs/es_MX/install.lang
@@ -8243,7 +8244,6 @@ htdocs/langs/es_VE/knowledgemanagement.lang
 htdocs/langs/es_VE/trips.lang
 htdocs/langs/es_VE/productbatch.lang
 htdocs/langs/es_VE/dict.lang
-htdocs/langs/es_VE/accountancy.lang
 htdocs/langs/es_VE/orders.lang
 htdocs/langs/es_VE/members.lang
 htdocs/langs/es_VE/datapolicy.lang
@@ -9547,13 +9547,18 @@ htdocs/categories/edit.php
 htdocs/barcode/codeinit.php
 htdocs/barcode/printsheet.php
 htdocs/webhook/modulebuilder.txt
+htdocs/webhook/triggerhistory_card.php
+htdocs/webhook/triggerhistory_note.php
 htdocs/webhook/target_list.php
 htdocs/webhook/class/api_webhook.class.php
 htdocs/webhook/class/target.class.php
+htdocs/webhook/class/triggerhistory.class.php
 htdocs/webhook/ajax/webhook.php
 htdocs/webhook/target_card.php
 htdocs/webhook/lib/webhook.lib.php
 htdocs/webhook/lib/webhook_target.lib.php
+htdocs/webhook/lib/webhook_triggerhistory.lib.php
+htdocs/webhook/triggerhistory_list.php
 htdocs/resource/contact.php
 htdocs/resource/agenda.php
 htdocs/resource/card.php
