@@ -35821,6 +35821,11 @@ Feature/Locations/Ui/UpdateLocationsTest.php
 Locations/Ui/UpdateLocationsTest.php
 Ui/UpdateLocationsTest.php
 UpdateLocationsTest.php
+tests/Feature/Locations/Ui/DeleteLocationsTest.php
+Feature/Locations/Ui/DeleteLocationsTest.php
+Locations/Ui/DeleteLocationsTest.php
+Ui/DeleteLocationsTest.php
+DeleteLocationsTest.php
 tests/Feature/Locations/Ui/CreateLocationsTest.php
 Feature/Locations/Ui/CreateLocationsTest.php
 Locations/Ui/CreateLocationsTest.php
@@ -37419,6 +37424,9 @@ migrations/2013_11_16_103336_add_location_id_to_assets.php
 database/migrations/2025_08_10_111553_rename_title_to_name_on_asset_maintenances.php
 migrations/2025_08_10_111553_rename_title_to_name_on_asset_maintenances.php
 2025_08_10_111553_rename_title_to_name_on_asset_maintenances.php
+database/migrations/2025_08_12_225214_add_qty_to_checkout_acceptances_table.php
+migrations/2025_08_12_225214_add_qty_to_checkout_acceptances_table.php
+2025_08_12_225214_add_qty_to_checkout_acceptances_table.php
 database/migrations/2015_03_18_055327_add_note_to_user.php
 migrations/2015_03_18_055327_add_note_to_user.php
 2015_03_18_055327_add_note_to_user.php

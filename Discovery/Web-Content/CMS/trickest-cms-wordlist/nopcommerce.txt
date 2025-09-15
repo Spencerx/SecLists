@@ -375,6 +375,7 @@ src/Presentation/Nop.Web/wwwroot/js/public.catalogproducts.js
 src/Presentation/Nop.Web/wwwroot/js/admintour/admin.tour.common.js
 src/Presentation/Nop.Web/wwwroot/lib_npm/jsrender/jsrender.min.js
 src/Presentation/Nop.Web/wwwroot/lib_npm/jsrender/jsrender.min.js.map
+src/Presentation/Nop.Web/wwwroot/lib_npm/chart.js/chart.umd.min.js.map
 src/Presentation/Nop.Web/wwwroot/lib_npm/chart.js/chart.umd.js.min.map
 src/Presentation/Nop.Web/wwwroot/lib_npm/chart.js/chart.umd.min.js
 src/Presentation/Nop.Web/wwwroot/lib_npm/filepond/filepond.min.js
@@ -397,10 +398,10 @@ src/Presentation/Nop.Web/wwwroot/lib_npm/globalize/globalize/date.js
 src/Presentation/Nop.Web/wwwroot/lib_npm/globalize/node-main.js
 src/Presentation/Nop.Web/wwwroot/lib_npm/globalize/globalize.js
 src/Presentation/Nop.Web/wwwroot/lib_npm/bootstrap-touchspin/jquery.bootstrap-touchspin.min.js
+src/Presentation/Nop.Web/wwwroot/lib_npm/datatables.net-buttons-bs4/node_modules/datatables.net-bs4/js/dataTables.bootstrap4.min.js
+src/Presentation/Nop.Web/wwwroot/lib_npm/datatables.net-buttons-bs4/node_modules/datatables.net-bs4/js/dataTables.bootstrap4.min.mjs
 src/Presentation/Nop.Web/wwwroot/lib_npm/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.mjs
 src/Presentation/Nop.Web/wwwroot/lib_npm/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js
-src/Presentation/Nop.Web/wwwroot/lib_npm/datatables.net-bs4/js/dataTables.bootstrap4.min.js
-src/Presentation/Nop.Web/wwwroot/lib_npm/datatables.net-bs4/js/dataTables.bootstrap4.min.mjs
 src/Presentation/Nop.Web/wwwroot/lib_npm/farbstastic/farbtastic.min.js
 src/Presentation/Nop.Web/wwwroot/lib_npm/ionicons/fonts/ionicons.eot
 src/Presentation/Nop.Web/wwwroot/lib_npm/ionicons/fonts/ionicons.svg
@@ -783,12 +784,8 @@ src/Presentation/Nop.Web/wwwroot/lib_npm/cldrjs/cldr.js
 src/Presentation/Nop.Web/wwwroot/lib_npm/cldrjs/node_main.js
 src/Presentation/Nop.Web/wwwroot/lib_npm/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2
 src/Presentation/Nop.Web/wwwroot/lib_npm/@fortawesome/fontawesome-free/webfonts/fa-v4compatibility.woff2
-src/Presentation/Nop.Web/wwwroot/lib_npm/@fortawesome/fontawesome-free/webfonts/fa-v4compatibility.ttf
 src/Presentation/Nop.Web/wwwroot/lib_npm/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff2
-src/Presentation/Nop.Web/wwwroot/lib_npm/@fortawesome/fontawesome-free/webfonts/fa-regular-400.ttf
-src/Presentation/Nop.Web/wwwroot/lib_npm/@fortawesome/fontawesome-free/webfonts/fa-brands-400.ttf
 src/Presentation/Nop.Web/wwwroot/lib_npm/@fortawesome/fontawesome-free/webfonts/fa-regular-400.woff2
-src/Presentation/Nop.Web/wwwroot/lib_npm/@fortawesome/fontawesome-free/webfonts/fa-solid-900.ttf
 src/Presentation/Nop.Web/wwwroot/lib_npm/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js
 src/Presentation/Nop.Web/wwwroot/lib_npm/jquery-validation/additional-methods.min.js
 src/Presentation/Nop.Web/wwwroot/lib_npm/jquery-validation/localization/methods_pt.min.js
@@ -2337,6 +2334,7 @@ src/Presentation/Nop.Web/Areas/Admin/Infrastructure/Cache/ModelCacheEventConsume
 src/Presentation/Nop.Web/Areas/Admin/Infrastructure/Mapper/Extensions/MappingExtensions.cs
 src/Presentation/Nop.Web/Areas/Admin/Infrastructure/Mapper/AdminMapperConfiguration.cs
 src/Presentation/Nop.Web/Areas/Admin/Infrastructure/AclEventConsumer.cs
+src/Presentation/Nop.Web/Areas/Admin/Infrastructure/LicenseTermsConsumer.cs
 src/Presentation/Nop.Web/Models/Vendors/VendorInfoModel.cs
 src/Presentation/Nop.Web/Models/Vendors/ApplyVendorModel.cs
 src/Presentation/Nop.Web/Models/Vendors/VendorAttributeModel.cs
@@ -3843,7 +3841,6 @@ src/Tests/Nop.Tests/Nop.Core.Tests/Infrastructure/TypeFinderTests.cs
 src/Tests/Nop.Tests/Nop.Core.Tests/Infrastructure/SingletonTests.cs
 src/Tests/Nop.Tests/Nop.Data.Tests/EntityRepositoryTests.cs
 src/Tests/Nop.Tests/Nop.Data.Tests/NopDataProviderTests.cs
-src/Tests/Nop.Tests/TestProcessorAccessor.cs
 src/Tests/Nop.Tests/SqLiteNopDataProvider.cs
 src/Tests/Nop.Tests/TestDataProviderManager.cs
 src/Tests/Nop.Tests/Nop.Web.Tests/Public/Validators/TestValidator.cs
@@ -3890,8 +3887,18 @@ src/Tests/Nop.Tests/Nop.Web.Tests/Startup.cs
 src/Tests/Nop.Tests/Nop.Web.Tests/Events/DateTimeConsumer.cs
 src/Tests/Nop.Tests/Nop.Web.Tests/Events/EventsTests.cs
 src/Tests/Nop.Tests/Nop.Web.Tests/Admin/Validators/Vendors/VendorValidatorTests.cs
+src/Tests/Nop.Tests/Nop.Web.Tests/Admin/Validators/Catalog/ProductValidatorTests.cs
 src/Tests/Nop.Tests/Nop.Web.Tests/Admin/Validators/Catalog/ManufacturerValidatorTests.cs
+src/Tests/Nop.Tests/Nop.Web.Tests/Admin/Validators/Catalog/ArtificialIntelligenceFullDescriptionValidatorTests.cs
+src/Tests/Nop.Tests/Nop.Web.Tests/Admin/Validators/Catalog/ProductAttributeValueModelValidatorTests.cs
+src/Tests/Nop.Tests/Nop.Web.Tests/Admin/Validators/Catalog/SpecificationAttributeValidatorTests.cs
+src/Tests/Nop.Tests/Nop.Web.Tests/Admin/Validators/Catalog/ProductReviewValidatorTests.cs
+src/Tests/Nop.Tests/Nop.Web.Tests/Admin/Validators/Catalog/ProductAttributeValidatorTests.cs
+src/Tests/Nop.Tests/Nop.Web.Tests/Admin/Validators/Catalog/ReviewTypeValidatorTests.cs
+src/Tests/Nop.Tests/Nop.Web.Tests/Admin/Validators/Catalog/ProductTagValidatorTests.cs
 src/Tests/Nop.Tests/Nop.Web.Tests/Admin/Validators/Catalog/CategoryValidatorTests.cs
+src/Tests/Nop.Tests/Nop.Web.Tests/Admin/Validators/Catalog/PredefinedProductAttributeValueModelValidatorTests.cs
+src/Tests/Nop.Tests/Nop.Web.Tests/Admin/Validators/Blogs/BlogPostValidatorTests.cs
 src/Tests/Nop.Tests/Nop.Web.Tests/Admin/Readme.txt
 src/Tests/Nop.Tests/Nop.Web.Tests/Admin/Infrastructure/AutoMapperConfigurationTest.cs
 src/Tests/Nop.Tests/BaseEntityEqualityComparer.cs
@@ -4086,6 +4093,7 @@ src/Libraries/Nop.Core/Domain/Common/SitemapSettings.cs
 src/Libraries/Nop.Core/Domain/Common/ISoftDeletedEntity.cs
 src/Libraries/Nop.Core/Domain/Common/Address.cs
 src/Libraries/Nop.Core/Domain/Common/AddressAttributeValue.cs
+src/Libraries/Nop.Core/Domain/Common/LicenseTerms.cs
 src/Libraries/Nop.Core/Domain/Common/AddressSettings.cs
 src/Libraries/Nop.Core/Domain/Common/SearchTerm.cs
 src/Libraries/Nop.Core/Domain/Common/SearchTermReportLine.cs
@@ -4368,6 +4376,7 @@ src/Libraries/Nop.Data/Migrations/UpgradeTo490/NewsLetterSubscriptionMigration.c
 src/Libraries/Nop.Data/Migrations/UpgradeTo490/SchemaMigration.cs
 src/Libraries/Nop.Data/Migrations/UpgradeTo490/DataMigration.cs
 src/Libraries/Nop.Data/Migrations/UpgradeTo490/MultipleWishlistMigration.cs
+src/Libraries/Nop.Data/Migrations/NopGeneratorAccessor.cs
 src/Libraries/Nop.Data/Migrations/NullMigrationContext.cs
 src/Libraries/Nop.Data/Migrations/MigrationProcessType.cs
 src/Libraries/Nop.Data/Migrations/UpdateMigrationType.cs
@@ -4533,6 +4542,7 @@ src/Libraries/Nop.Data/DataProviders/MsSqlDataProvider.cs
 src/Libraries/Nop.Data/DataProviders/MySqlDataProvider.cs
 src/Libraries/Nop.Data/DataProviders/PostgreSqlDataProvider.cs
 src/Libraries/Nop.Data/DataProviders/BaseDataProvider.cs
+src/Libraries/Nop.Data/DataProviders/Fluentmigrator/NopMySql5TypeMap.cs
 src/Libraries/Nop.Data/Nop.Data.csproj
 src/Libraries/Nop.Data/IRepository.cs
 src/Libraries/Nop.Data/Extensions/FluentMigratorExtensions.cs
@@ -4655,6 +4665,7 @@ src/Libraries/Nop.Services/Configuration/NopSettingsDefaults.cs
 src/Libraries/Nop.Services/Configuration/Caching/SettingCacheEventConsumer.cs
 src/Libraries/Nop.Services/Configuration/ISettingService.cs
 src/Libraries/Nop.Services/Configuration/SettingService.cs
+src/Libraries/Nop.Services/Configuration/SettingServiceExtensions.cs
 src/Libraries/Nop.Services/ArtificialIntelligence/GeminiHttpClientHelper.cs
 src/Libraries/Nop.Services/ArtificialIntelligence/ArtificialIntelligenceService.cs
 src/Libraries/Nop.Services/ArtificialIntelligence/DeepSeekHttpClientHelper.cs
