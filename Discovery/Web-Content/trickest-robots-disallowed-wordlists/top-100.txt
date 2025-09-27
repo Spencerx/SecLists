@@ -756,6 +756,7 @@ articles
 artists
 asset
 atari/images/public
+athletic
 athletic*/?source=
 athletic*/boxscore
 athletic*/signed-mp3-redirect-url
@@ -1043,6 +1044,8 @@ conversation
 conversations
 convert-business
 convert-personal
+copilot
+copilot/c
 copy-conductor/crawled
 copyright-reporting
 core/
@@ -1641,10 +1644,10 @@ hp/video
 hpc/*/supported-applications.aspx?
 hpm
 hpmob
-http://amazon.co.uk/robots.txt
-http://m.youtube.com/robots.txt
-http://ncbi.nlm.nih.gov/robots.txt
-http://wordpress.org/robots.txt
+http://calendar.google.com/robots.txt
+http://cdc.gov/robots.txt
+http://flickr.com/robots.txt
+http://plus.google.com/robots.txt
 hub?category=
 hz/contact-us/ajax/initiate-trusted-contact
 hz/help/contact/*/message/$
@@ -1653,6 +1656,7 @@ hz/leaderboard/top-reviewers
 i/api
 i/u
 ia
+icdp
 icons
 id-id.www.cloudflare.com
 id-id/feedback
@@ -1963,6 +1967,7 @@ merchant/reviews?
 merchantapps
 message
 messaging
+meta-ai-answers
 mh255com
 migration/
 mkc=*&
@@ -2115,6 +2120,8 @@ pda/?
 pda/search?
 pda?
 pega/customers-for-life
+people/all
+people/domain
 people/iweReconnectAction
 pepe
 phone/compare/?
@@ -3452,7 +3459,7 @@ wiki/Wikipedia_Diskussion:Checkuser
 wiki/Wikipedia_Diskussion:Spam-Blacklist-Log
 wiki/Wikipedia_talk%3AAbuse_reports
 wiki/Wikipedia_talk%3AAbuse_response
-wiki/Wikipedia_talk%3AAdministrator_electionshttp://docs.google.com/robots.txt
+wiki/Wikipedia_talk%3AAdministrator_electionshttp://policies.google.com/robots.txt
 wiki/Wikipedia_talk%3AAdministrator_recall
 wiki/Wikipedia_talk%3AAdministrator_review
 wiki/Wikipedia_talk%3AAdministrators%27_noticeboard

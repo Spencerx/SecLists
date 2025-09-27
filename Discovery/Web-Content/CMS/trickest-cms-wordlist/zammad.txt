@@ -876,6 +876,7 @@ spec/requests/robots_txt_spec.rb
 spec/requests/session_spec.rb
 spec/requests/organization_spec.rb
 spec/requests/system_report_spec.rb
+spec/requests/http_logs_spec.rb
 spec/requests/form_spec.rb
 spec/requests/template_spec.rb
 spec/requests/webhooks_controller_spec.rb
@@ -899,6 +900,7 @@ spec/requests/o_auth_spec.rb
 spec/requests/group_spec.rb
 spec/requests/mention_spec.rb
 spec/requests/public_links_spec.rb
+spec/requests/graphql_spec.rb
 spec/requests/online_notifications_controller_spec.rb
 spec/requests/tag_spec.rb
 spec/requests/text_module_spec.rb
@@ -1363,6 +1365,7 @@ spec/models/smime_certificate_spec.rb
 spec/models/setting_spec.rb
 spec/models/system_report_spec.rb
 spec/models/store/provider/s3_spec.rb
+spec/models/store/provider/db_spec.rb
 spec/models/store/provider/file_spec.rb
 spec/models/store/file_spec.rb
 spec/models/user_group_spec.rb
@@ -2182,6 +2185,7 @@ spec/policies/knowledge_base_policy_examples.rb
 spec/policies/email_address_policy_spec.rb
 spec/policies/store_policy_spec.rb
 spec/policies/application_policy/field_scope_spec.rb
+spec/policies/http_log_policy/scope_spec.rb
 spec/policies/external_data_source_policy_spec.rb
 spec/policies/user/overview_sorting_policy_spec.rb
 spec/policies/taskbar_policy/scope_spec.rb
@@ -2205,6 +2209,7 @@ spec/policies/role_policy_spec.rb
 spec/policies/template_policy_spec.rb
 spec/policies/checklist/item_policy_spec.rb
 spec/policies/channel_policy_spec.rb
+spec/policies/http_log_policy_spec.rb
 spec/policies/checklist_template_policy_spec.rb
 spec/channels/application_cable/connection_spec.rb
 spec/channels/graphql_channel_spec.rb
@@ -2362,6 +2367,7 @@ spec/lib/external_data_source_spec.rb
 spec/lib/tasks/zammad/command_spec.rb
 spec/lib/tasks/zammad/store/move_files_spec.rb
 spec/lib/tasks/zammad/store/verify_files_spec.rb
+spec/lib/tasks/zammad/db/max_connections_spec.rb
 spec/lib/excel_sheet/ticket_spec.rb
 spec/lib/mixin/has_backends_examples.rb
 spec/lib/external_sync_spec.rb
@@ -2489,6 +2495,7 @@ spec/lib/background_services/service/manage_sessions_jobs_spec.rb
 spec/lib/background_services/service_config_spec.rb
 spec/lib/ai/service_spec.rb
 spec/lib/ai/vectordb/version_spec.rb
+spec/lib/ai/provider/mistral_spec.rb
 spec/lib/ai/provider/open_ai_spec.rb
 spec/lib/ai/provider/zammad_ai_spec.rb
 spec/lib/ai/provider/azure_spec.rb
@@ -2605,6 +2612,7 @@ spec/db/migrate/rename_ticket_overview_priority_icon_setting_spec.rb
 spec/db/migrate/issue_4266_fix_field_spec.rb
 spec/db/migrate/synchronize_checklist_item_state_from_tickets_spec.rb
 spec/db/migrate/issue_2333_object_country_already_exists_spec.rb
+spec/db/migrate/http_log_sensitive_data_cleanup_spec.rb
 spec/db/migrate/issue_4410_account_linking_notification_spec.rb
 spec/db/migrate/pgp_key_email_addresses_spec.rb
 spec/db/migrate/saml_ssl_verify_help_spec.rb
@@ -4010,6 +4018,7 @@ app/assets/javascripts/app/lib/app_post/two_factor_methods/authenticator_app.cof
 app/assets/javascripts/app/lib/app_post/two_factor_methods/recovery_codes.coffee
 app/assets/javascripts/app/lib/app_post/two_factor_methods/security_keys.coffee
 app/assets/javascripts/app/lib/app_post/ai_provider/ollama.coffee
+app/assets/javascripts/app/lib/app_post/ai_provider/mistral.coffee
 app/assets/javascripts/app/lib/app_post/ai_provider/anthropic.coffee
 app/assets/javascripts/app/lib/app_post/ai_provider/zammad_ai.coffee
 app/assets/javascripts/app/lib/app_post/ai_provider/open_ai.coffee
@@ -6153,6 +6162,7 @@ app/views/tests/show.html.erb
 app/views/tests/form.html.erb
 app/views/tests/html_utils.html.erb
 app/views/tests/form_find.html.erb
+app/policies/http_log_policy.rb
 app/policies/ticket_policy.rb
 app/policies/ticket/time_accounting_policy.rb
 app/policies/ticket/shared_draft_start_policy.rb
@@ -6293,6 +6303,7 @@ app/policies/user_policy.rb
 app/policies/system_report_policy.rb
 app/policies/application_policy/field_scope.rb
 app/policies/application_policy/scope.rb
+app/policies/http_log_policy/scope.rb
 app/policies/user/overview_sorting_policy.rb
 app/policies/channel_policy.rb
 app/policies/checklist_template_policy.rb
@@ -9523,6 +9534,11 @@ test/data/vcr_cassettes/lib/service/geo_location/osm/service_geolocation_osm_rev
 test/data/vcr_cassettes/lib/service/geo_location/osm/service_geolocation_osm_geocode_with_a_german_address_without_a_separator_between_street_zipcode_and_city_example_at_spec_lib_service_geo_location_osm_spec_rb_25.yml
 test/data/vcr_cassettes/lib/service/geo_location/osm/service_geolocation_osm_geocode_with_a_swiss_address_example_at_spec_lib_service_geo_location_osm_spec_rb_32.yml
 test/data/vcr_cassettes/lib/service/geo_location/osm/service_geolocation_osm_geocode_with_a_swiss_address_without_a_separator_between_street_zipcode_and_city_example_at_spec_lib_service_geo_location_osm_spec_rb_37.yml
+test/data/vcr_cassettes/lib/ai/provider/mistral/ai_provider_mistral_when_specifying_a_model_without_a_model_does_exchange_data_with_mistral_endpoint.yml
+test/data/vcr_cassettes/lib/ai/provider/mistral/ai_provider_mistral_when_specifying_a_model_with_an_invalid_model_raises_an_error.yml
+test/data/vcr_cassettes/lib/ai/provider/mistral/ai_provider_mistral_when_specifying_a_model_with_a_valid_model_with_a_model_that_does_not_support_temperature_raises_an_error_for_invalid_model.yml
+test/data/vcr_cassettes/lib/ai/provider/mistral/ai_provider_mistral_when_api_is_faulty_raises_an_error.yml
+test/data/vcr_cassettes/lib/ai/provider/mistral/ai_provider_mistral_when_specifying_a_model_with_a_valid_model_does_exchange_data_with_mistral_endpoint.yml
 test/data/vcr_cassettes/lib/ai/provider/anthropic/ai_provider_anthropic_when_specifying_a_model_with_an_invalid_model_raises_an_error.yml
 test/data/vcr_cassettes/lib/ai/provider/anthropic/ai_provider_anthropic_when_specifying_a_model_without_a_model_does_exchange_data_with_anthropic_endpoint.yml
 test/data/vcr_cassettes/lib/ai/provider/anthropic/ai_provider_anthropic_when_embeddings_are_requested_raises_an_error.yml
@@ -10296,6 +10312,8 @@ lib/tasks/zammad/db/reset.rake
 lib/tasks/zammad/db/rebuild.rake
 lib/tasks/zammad/db/init.rake
 lib/tasks/zammad/db/unseeded.rake
+lib/tasks/zammad/db/max_connections.rake
+lib/tasks/zammad/db/max_connections.rb
 lib/tasks/zammad/setup/auto_wizard.rake
 lib/tasks/zammad/setup/db_config.rake
 lib/tasks/cache/clear.rake
@@ -10811,6 +10829,7 @@ lib/ai/provider/zammad_ai.rb
 lib/ai/provider/open_ai.rb
 lib/ai/provider/ollama.rb
 lib/ai/provider/azure.rb
+lib/ai/provider/mistral.rb
 lib/ai/provider/concerns/handles_response.rb
 lib/ai/provider/anthropic.rb
 lib/ai/service/text_tool.rb
@@ -11136,9 +11155,11 @@ db/migrate/20210923075329_remove_otrs_diff_worker_scheduler_entry.rb
 db/migrate/20231122123502_issue_4848_fix_overview_bulk_screen.rb
 db/migrate/20250102164204_add_channel_microsoft_graph.rb
 db/migrate/20211213105441_drop_text_module_foreign_id.rb
+db/migrate/20250923051839_summary_generation_editable.rb
 db/migrate/20221220095750_issue_4434_github_rename.rb
 db/migrate/20201210075534_maintenance_missing_kb_unique_indexes.rb
 db/migrate/20210812000001_jira_config.rb
+db/migrate/20250903092339_http_log_sensitive_data_cleanup.rb
 db/migrate/20250714101518_update_ai_permissions.rb
 db/migrate/20221206124535_issue_4412_setting_saml_logout_url.rb
 db/migrate/20190918114553_issue_2867_footer_header_public_link.rb
@@ -11250,6 +11271,7 @@ db/migrate/20241206194620_drop_sessions_jobs_scheduler.rb
 db/migrate/20220124104955_update_object_attributes.rb
 db/migrate/20200121000001_smime_support.rb
 db/migrate/20180502015927_issue_1219_zhtw_locale_typo.rb
+db/migrate/20250918105948_issue_5781_richtext_notes.rb
 db/migrate/20210614063039_sla_add_response_time.rb
 db/migrate/20220124101834_setting_updates2.rb
 db/migrate/20180410000001_cleanup_user_preferences_notification_sound2.rb

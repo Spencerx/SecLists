@@ -3464,6 +3464,7 @@ test/org/apache/tomcat/util/net/TestXxxEndpoint.java
 test/org/apache/tomcat/util/net/localhost-rsa-copy1.jks
 test/org/apache/tomcat/util/net/localhost-rsa-key.pem
 test/org/apache/tomcat/util/net/localhost-rsa.jks
+test/org/apache/tomcat/util/net/TestKeyManagerWrappingFips.java
 test/org/apache/tomcat/util/net/openssl/TestOpenSSLConf.java
 test/org/apache/tomcat/util/net/openssl/ciphers/TesterOpenSSL.java
 test/org/apache/tomcat/util/net/openssl/ciphers/TestOpenSSLCipherConfigurationParser.java
@@ -3593,6 +3594,7 @@ test/org/apache/coyote/http2/TestStreamProcessor.java
 test/org/apache/coyote/http2/TestHttp2Section_6_8.java
 test/org/apache/coyote/http2/TestHpack.java
 test/org/apache/coyote/http2/TestHttp2InitialConnection.java
+test/org/apache/coyote/http2/TestStandardSessionIntegrationHttp2.java
 test/org/apache/coyote/http2/TestHttp2ConnectionTimeouts.java
 test/org/apache/coyote/http2/TestStream.java
 test/org/apache/coyote/http2/TesterHttp2Parser.java
@@ -3618,6 +3620,7 @@ test/org/apache/coyote/http11/filters/TestGzipOutputFilter.java
 test/org/apache/coyote/http11/filters/TesterOutputBuffer.java
 test/org/apache/coyote/http11/filters/TestChunkedInputFilter.java
 test/org/apache/coyote/http11/TestHttp11InputBufferCRLF.java
+test/org/apache/juli/TestPerWebappJuliIntegration.java
 test/org/apache/juli/TestFileHandlerNonRotatable.java
 test/org/apache/juli/TestClassLoaderLogManager.java
 test/org/apache/juli/TestDateFormatCache.java
@@ -4428,6 +4431,7 @@ test/webapp/jsp/generator/xml-prolog-tag.jspx
 test/webapp/jsp/generator/setters-01.jsp
 test/webapp/jsp/generator/templatetext-02.jsp
 test/webapp/jsp/generator/usebean-07.jsp
+test/webapp/jsp/generator/lambda.jsp
 test/webapp/jsp/generator/release.jsp
 test/webapp/jsp/generator/forward-04.jsp
 test/webapp/jsp/generator/usebean-08.jsp
