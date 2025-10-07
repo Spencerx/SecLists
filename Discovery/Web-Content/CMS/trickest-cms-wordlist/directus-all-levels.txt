@@ -4714,6 +4714,8 @@ setup/global.ts
 global.ts
 .changeset/khaki-falcons-search.md
 khaki-falcons-search.md
+.changeset/dull-berries-bake.md
+dull-berries-bake.md
 .changeset/great-owls-enjoy.md
 great-owls-enjoy.md
 .changeset/petite-pears-make.md
@@ -4730,8 +4732,14 @@ early-owls-return.md
 forty-games-enter.md
 .changeset/cruel-clubs-rhyme.md
 cruel-clubs-rhyme.md
+.changeset/dull-boxes-follow.md
+dull-boxes-follow.md
+.changeset/fresh-rules-talk.md
+fresh-rules-talk.md
 .changeset/chubby-papers-kiss.md
 chubby-papers-kiss.md
+.changeset/lovely-eggs-thank.md
+lovely-eggs-thank.md
 pnpm-workspace.yaml
 crowdin.yml
 .stylelintignore
@@ -7059,6 +7067,10 @@ api/src/services/users.test.ts
 src/services/users.test.ts
 services/users.test.ts
 users.test.ts
+api/src/services/meta.test.ts
+src/services/meta.test.ts
+services/meta.test.ts
+meta.test.ts
 api/src/services/import-export.test.ts
 src/services/import-export.test.ts
 services/import-export.test.ts
