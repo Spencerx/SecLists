@@ -1971,7 +1971,6 @@ java/org/apache/catalina/Authenticator.java
 java/org/apache/catalina/Executor.java
 java/org/apache/catalina/LifecycleListener.java
 java/org/apache/catalina/filters/LocalStrings_de.properties
-java/org/apache/catalina/filters/RemoteAddrFilter.java
 java/org/apache/catalina/filters/RemoteIpFilter.java
 java/org/apache/catalina/filters/SessionInitializerFilter.java
 java/org/apache/catalina/filters/ExpiresFilter.java
@@ -2179,7 +2178,6 @@ java/org/apache/catalina/valves/LocalStrings_ru.properties
 java/org/apache/catalina/valves/Constants.java
 java/org/apache/catalina/valves/ErrorReportValve.java
 java/org/apache/catalina/valves/LocalStrings_ja.properties
-java/org/apache/catalina/valves/RemoteAddrValve.java
 java/org/apache/catalina/valves/ProxyErrorReportValve.java
 java/org/apache/catalina/valves/mbeans-descriptors.xml
 java/org/apache/catalina/valves/JsonErrorReportValve.java
@@ -3347,6 +3345,7 @@ test/webapp-3.1/el-as-literal.jsp
 test/webapp-sci/WEB-INF/classes/META-INF/services/jakarta.servlet.ServletContainerInitializer
 test/webapp-servletsecurity-a/WEB-INF/web.xml
 test/org/apache/tomcat/security/TestSecurity2025Http2.java
+test/org/apache/tomcat/security/TestSecurity2017.java
 test/org/apache/tomcat/unittest/TesterLeakingServlet2.java
 test/org/apache/tomcat/unittest/TesterContext.java
 test/org/apache/tomcat/unittest/TesterLeakingServlet1.java
@@ -3543,15 +3542,19 @@ test/org/apache/tomcat/util/net/localhost-ec-key.pem
 test/org/apache/tomcat/util/net/localhost-rsa-copy1.jks
 test/org/apache/tomcat/util/net/key-password
 test/org/apache/tomcat/util/net/localhost-rsa-cert.pem
+test/org/apache/tomcat/util/net/ocsp/ocsp-client-good.der
 test/org/apache/tomcat/util/net/ocsp/ocsp-good.der
 test/org/apache/tomcat/util/net/ocsp/trust-password
 test/org/apache/tomcat/util/net/ocsp/ocsp-revoked.der
+test/org/apache/tomcat/util/net/ocsp/client-password
 test/org/apache/tomcat/util/net/ocsp/generate-ocsp-test-artifacts.sh
 test/org/apache/tomcat/util/net/ocsp/trustStore.p12
 test/org/apache/tomcat/util/net/ocsp/ca-cert.pem
 test/org/apache/tomcat/util/net/ocsp/TestOcspIntegration.java
 test/org/apache/tomcat/util/net/ocsp/server-cert.pem
 test/org/apache/tomcat/util/net/ocsp/server-key.pem
+test/org/apache/tomcat/util/net/ocsp/client-keystore.p12
+test/org/apache/tomcat/util/net/ocsp/ocsp-client-revoked.der
 test/org/apache/juli/TesterOneLineFormatterMillisPerformance.java
 test/org/apache/juli/TestDateFormatCache.java
 test/org/apache/juli/TestLogUtil.java
@@ -3906,6 +3909,7 @@ test/org/apache/catalina/valves/TestErrorReportValve.java
 test/org/apache/catalina/valves/TestPatternTokenizer.java
 test/org/apache/catalina/valves/TestParameterLimitValveConfig.java
 test/org/apache/catalina/valves/Benchmarks.java
+test/org/apache/catalina/authenticator/TestSSOChangeSessionId.java
 test/org/apache/catalina/authenticator/TestDigestAuthenticatorAlgorithms.java
 test/org/apache/catalina/authenticator/TestDigestAuthenticator.java
 test/org/apache/catalina/authenticator/jaspic/TestAuthConfigFactoryImpl.java
