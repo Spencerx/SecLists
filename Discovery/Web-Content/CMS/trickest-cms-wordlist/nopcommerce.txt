@@ -627,6 +627,7 @@ src/Plugins/Nop.Plugin.Misc.RFQ/Services/Caching/QuoteItemCacheEventConsumer.cs
 src/Plugins/Nop.Plugin.Misc.RFQ/Services/EventConsumer.cs
 src/Plugins/Nop.Plugin.Misc.RFQ/Services/RfqMessageTokenEventConsumer.cs
 src/Plugins/Nop.Plugin.Misc.RFQ/Services/RfqPermissionConfigManager.cs
+src/Plugins/Nop.Plugin.Misc.RFQ/Migrations/AddLocales.cs
 src/Plugins/Nop.Plugin.Misc.RFQ/Views/Components/CustomerRfqMenu.cshtml
 src/Plugins/Nop.Plugin.Misc.RFQ/Views/Components/ClearRfq.cshtml
 src/Plugins/Nop.Plugin.Misc.RFQ/Views/Components/AddRfq.cshtml
@@ -3211,6 +3212,7 @@ src/Presentation/Nop.Web/Areas/Admin/Validators/Customers/CustomerRoleValidator.
 src/Presentation/Nop.Web/Areas/Admin/Validators/Customers/CustomerValidator.cs
 src/Presentation/Nop.Web/Areas/Admin/Validators/Customers/CustomerAttributeValidator.cs
 src/Presentation/Nop.Web/Areas/Admin/Validators/Customers/CustomerAddressValidator.cs
+src/Presentation/Nop.Web/Areas/Admin/Validators/FilterLevelValues/FilterLevelValueValidator.cs
 src/Presentation/Nop.Web/Areas/Admin/Validators/Tax/TaxCategoryValidator.cs
 src/Presentation/Nop.Web/Areas/Admin/Validators/Messages/MessageTemplateValidator.cs
 src/Presentation/Nop.Web/Areas/Admin/Validators/Messages/QueuedEmailValidator.cs

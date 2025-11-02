@@ -2964,6 +2964,7 @@ resources/lang/en-US/button.php
 resources/lang/en-US/validation.php
 resources/lang/en-US/auth/message.php
 resources/lang/en-US/auth/general.php
+resources/lang/en-US/permissions.php
 resources/lang/en-US/table.php
 resources/lang/am-ET/account/general.php
 resources/lang/am-ET/admin/asset_maintenances/message.php
@@ -6522,9 +6523,13 @@ resources/views/blade/input/location-select.blade.php
 resources/views/blade/input/locale-select.blade.php
 resources/views/blade/input/email-format-select.blade.php
 resources/views/blade/input/datepicker.blade.php
+resources/views/blade/input/text.blade.php
 resources/views/blade/input/time-display-format.blade.php
 resources/views/blade/input/textarea.blade.php
+resources/views/blade/form-label.blade.php
 resources/views/blade/full-user-name.blade.php
+resources/views/blade/form-row.blade.php
+resources/views/blade/form-tooltip.blade.php
 resources/views/blade/form-legend.blade.php
 resources/views/blade/icon.blade.php
 resources/views/auth/login.blade.php
@@ -7276,7 +7281,6 @@ app/Models/Recipients/AdminRecipient.php
 app/Models/Recipients/AlertRecipient.php
 app/Models/Recipients/Recipient.php
 app/Models/AssetModel.php
-app/Models/Loggable.php
 app/Models/Department.php
 app/Models/License.php
 app/Models/SnipeSCIMConfig.php
@@ -7290,7 +7294,6 @@ app/Models/Maintenance.php
 app/Models/CustomFieldset.php
 app/Models/Component.php
 app/Models/Category.php
-app/Models/Requestable.php
 app/Models/Depreciation.php
 app/Models/CompanyableChildScope.php
 app/Models/SamlNonce.php
@@ -7344,9 +7347,11 @@ app/Models/PredefinedKit.php
 app/Models/Setting.php
 app/Models/User.php
 app/Models/Traits/CompanyableTrait.php
+app/Models/Traits/Loggable.php
 app/Models/Traits/Acceptable.php
 app/Models/Traits/HasUploads.php
 app/Models/Traits/CompanyableChildTrait.php
+app/Models/Traits/Requestable.php
 app/Models/Traits/Searchable.php
 app/Presenters/ConsumablePresenter.php
 app/Presenters/CategoryPresenter.php

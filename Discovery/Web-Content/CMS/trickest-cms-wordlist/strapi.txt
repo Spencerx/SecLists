@@ -754,6 +754,7 @@ packages/core/upload/admin/src/utils/tests/formatBytes.test.ts
 packages/core/upload/admin/src/utils/tests/downloadFile.test.ts
 packages/core/upload/admin/src/utils/tests/getFileExtension.test.ts
 packages/core/upload/admin/src/utils/tests/typeFromMime.test.ts
+packages/core/upload/admin/src/utils/icons.ts
 packages/core/upload/admin/src/utils/formatBytes.ts
 packages/core/upload/admin/src/utils/displayedFilters.ts
 packages/core/upload/admin/src/utils/containsAssetFilter.ts
@@ -816,6 +817,7 @@ packages/core/upload/admin/src/pages/SettingsPage/tests/reducer.test.ts
 packages/core/upload/admin/src/pages/SettingsPage/tests/SettingsPage.test.tsx
 packages/core/upload/admin/src/pages/SettingsPage/reducer.ts
 packages/core/upload/admin/src/pages/SettingsPage/SettingsPage.tsx
+packages/core/upload/admin/src/enums.ts
 packages/core/upload/admin/src/components/UploadAssetDialog/UploadAssetDialog.tsx
 packages/core/upload/admin/src/components/UploadAssetDialog/tests/UploadAssetDialog.test.tsx
 packages/core/upload/admin/src/components/UploadAssetDialog/PendingAssetStep/tests/PendingAssetStep.test.tsx
@@ -3715,6 +3717,7 @@ packages/plugins/i18n/admin/tests/server.ts
 packages/plugins/i18n/admin/tests/setup.ts
 packages/plugins/i18n/admin/tsconfig.build.json
 packages/plugins/i18n/admin/tsconfig.json
+packages/plugins/i18n/admin/src/hooks/tests/useI18n.test.ts
 packages/plugins/i18n/admin/src/hooks/useI18n.ts
 packages/plugins/i18n/admin/src/hooks/useAILocalizationJobsPolling.ts
 packages/plugins/i18n/admin/src/utils/fields.ts
@@ -4792,6 +4795,7 @@ tests/e2e/tests/content-manager/relations-on-the-fly/create-relation-and-save.sp
 tests/e2e/tests/content-manager/history.spec.ts
 tests/e2e/tests/content-manager/preview.spec.ts
 tests/e2e/tests/content-manager/edit-view/single-type-edit-view.spec.ts
+tests/e2e/tests/content-manager/edit-view/enumeration-fields.spec.ts
 tests/e2e/tests/content-manager/edit-view/collection-type-edit-view.spec.ts
 tests/e2e/tests/content-manager/edit-view/collection-type-edit-view-errors.spec.ts
 tests/e2e/tests/content-manager/uniqueness.spec.ts
@@ -5005,14 +5009,17 @@ examples/getstarted/src/admin/preview/dummy-preview.jsx
 examples/getstarted/src/admin/webpack.config.js
 examples/getstarted/src/admin/app.jsx
 examples/getstarted/src/middlewares/test-middleware.js
+examples/getstarted/src/components/default/org.json
 examples/getstarted/src/components/default/links.json
 examples/getstarted/src/components/default/restaurantservice.json
 examples/getstarted/src/components/default/car.json
 examples/getstarted/src/components/default/social-links.json
 examples/getstarted/src/components/default/dish.json
+examples/getstarted/src/components/default/organization.json
 examples/getstarted/src/components/default/apple.json
 examples/getstarted/src/components/default/closingperiod.json
 examples/getstarted/src/components/default/temp.json
+examples/getstarted/src/components/default/test-component.json
 examples/getstarted/src/components/default/openingtimes.json
 examples/getstarted/src/components/blog/test-como.json
 examples/getstarted/src/components/basic/relation.json

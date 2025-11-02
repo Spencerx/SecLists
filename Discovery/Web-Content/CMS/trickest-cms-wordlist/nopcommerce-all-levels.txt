@@ -3348,6 +3348,11 @@ Plugins/Nop.Plugin.Misc.RFQ/Services/RfqPermissionConfigManager.cs
 Nop.Plugin.Misc.RFQ/Services/RfqPermissionConfigManager.cs
 Services/RfqPermissionConfigManager.cs
 RfqPermissionConfigManager.cs
+src/Plugins/Nop.Plugin.Misc.RFQ/Migrations/AddLocales.cs
+Plugins/Nop.Plugin.Misc.RFQ/Migrations/AddLocales.cs
+Nop.Plugin.Misc.RFQ/Migrations/AddLocales.cs
+Migrations/AddLocales.cs
+AddLocales.cs
 src/Plugins/Nop.Plugin.Misc.RFQ/Views/Components/CustomerRfqMenu.cshtml
 Plugins/Nop.Plugin.Misc.RFQ/Views/Components/CustomerRfqMenu.cshtml
 Nop.Plugin.Misc.RFQ/Views/Components/CustomerRfqMenu.cshtml
@@ -20913,6 +20918,14 @@ Admin/Validators/Customers/CustomerAddressValidator.cs
 Validators/Customers/CustomerAddressValidator.cs
 Customers/CustomerAddressValidator.cs
 CustomerAddressValidator.cs
+src/Presentation/Nop.Web/Areas/Admin/Validators/FilterLevelValues/FilterLevelValueValidator.cs
+Presentation/Nop.Web/Areas/Admin/Validators/FilterLevelValues/FilterLevelValueValidator.cs
+Nop.Web/Areas/Admin/Validators/FilterLevelValues/FilterLevelValueValidator.cs
+Areas/Admin/Validators/FilterLevelValues/FilterLevelValueValidator.cs
+Admin/Validators/FilterLevelValues/FilterLevelValueValidator.cs
+Validators/FilterLevelValues/FilterLevelValueValidator.cs
+FilterLevelValues/FilterLevelValueValidator.cs
+FilterLevelValueValidator.cs
 src/Presentation/Nop.Web/Areas/Admin/Validators/Tax/TaxCategoryValidator.cs
 Presentation/Nop.Web/Areas/Admin/Validators/Tax/TaxCategoryValidator.cs
 Nop.Web/Areas/Admin/Validators/Tax/TaxCategoryValidator.cs
