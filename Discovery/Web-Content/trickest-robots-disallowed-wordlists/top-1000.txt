@@ -2336,7 +2336,7 @@ $rpc/google.internal.maps.mapsjs.v1.MapsJsInternalService
 ?*__rmidpage
 ?*add-to-cart=
 ?*ajs_event
-?*apikey*http://vk.com/robots.txt
+?*apikey*http://vogue.com/robots.txt
 ?*app
 ?*attachment_id
 ?*author
@@ -4188,6 +4188,7 @@ TestingTravelMaps
 Themes/Client/app/img/favicons/manifest.json
 ThirdPartyRedirect
 ThorHammer
+TodayOJ
 TodaysLowestFaresAjax
 Tr/SocialMediaActivity/LogJSWidgetLinkClick
 Tracker?data=*
@@ -4511,6 +4512,7 @@ _remote
 _report/
 _rid
 _rprt
+_rsc=
 _rss.xml
 _rv/gtm
 _rv/jwt
@@ -5153,7 +5155,7 @@ apdata
 api
 api*.do
 api*?hl=
-api*?hl=http://adssettings.google.com/robots.txt
+api*?hl=http://adweek.com/robots.txt
 api-keys
 api-proxy
 api.html?
@@ -5828,7 +5830,6 @@ backstage
 bad-boys
 bad-boys-ii
 badges/profile/create
-baidu
 bal/impression
 bal/impression/RecordImpression.htm?
 ban-me-i-am-a-robot
@@ -6083,7 +6084,7 @@ blog/*?text=
 blog/*sitemap.xml$
 blog/*utm_source=
 blog/.*
-blog/.html.*http://safety.google/robots.txt
+blog/.html.*http://samsung.com/robots.txt
 blog/10-lessons-from-an-engineering-manager/$
 blog/2025-shifting-roles-report/$
 blog/23-prototyping-resources-to-bookmark-right-now/$
@@ -7193,7 +7194,6 @@ c/subscription
 c/technology.atom
 c1/en/pdf-nf/*.PDF
 c1/en/pdf-nf/*.pdf
-c1a6a4206fb6bc70
 c?*attr_*=
 cDN_contENt
 ca
@@ -7744,6 +7744,7 @@ ch_it/Download
 challenge
 challenges
 challenges$
+change-displayed-metadata
 change-email
 change-password
 change-shipping
@@ -10246,7 +10247,6 @@ contests
 context_referrer=gig_page
 context_referrer=user_page
 contribute/*
-control
 controller
 controller/audio_player
 controller/facebook
@@ -10383,7 +10383,6 @@ cpp/docs/reference/*/latest
 cpp/docs/reference/*/latest$
 cpp/docs/reference/help
 cpresources
-cpro
 cpropub/univercd
 cr$
 cr/Download
@@ -11388,6 +11387,7 @@ deleteHistoryRecord
 delete_post
 delicacy
 delight
+delivery_tracking
 dell/cities-transformed
 dell/cloud-future-of-medicine
 deloitte
@@ -11673,6 +11673,7 @@ docs/search_results.html
 docs/socialmarkup
 doctor-strange
 document
+document-format.html
 document/comments
 document/create
 document/delete
@@ -11727,6 +11728,7 @@ doubleclick
 downgrade
 download
 download-evernote
+download-notice
 download/*/Zoom_launcher.exe
 download/*/zoomusLauncher.zip
 download/get
@@ -11927,6 +11929,7 @@ element/?
 element/commun/afficher
 element_properties.
 elements
+eli-search
 eliminar-busqueda
 eliminar-favoritos
 elite?
@@ -12773,6 +12776,7 @@ error/403
 error/404
 error/500
 error/PageNotFound.htm
+error/authentication-required.html
 error404.aspx
 error_204
 errorpages
@@ -13876,6 +13880,7 @@ experiences/*?*modal
 experiences/*?*scheduled_id
 experiment
 experiments.xml
+expert-search-form
 experts-arena
 experts/search
 experts/search?
@@ -13883,6 +13888,7 @@ explore
 explore/*/?p=
 explore/*/lightbox
 explore/search
+export-documents
 export/
 export/sites/intranet/
 export/sites/upov/shared/
@@ -13898,6 +13904,7 @@ expresscart
 expresssale
 ext
 ext-content
+ext_*
 extensions/eventack.html
 extensionstable.htm
 external
@@ -13943,6 +13950,8 @@ facebook-template
 facebook/templates
 facebook_connect
 factory
+fallback
+false/select-store-cookies.html
 family-validation
 family_filter
 familylink-earlyaccess
@@ -14174,6 +14183,7 @@ filters=
 fin_ms
 finance
 finance*?
+finance/assistant
 finance/favicon
 finance/stocks/financialHighlights
 finance/stocks/option
@@ -15970,7 +15980,7 @@ forum/members
 forum/online
 forum/posts
 forum/search
-forum/ucp.phphttp://en.m.wikipedia.org/robots.txt
+forum/ucp.phphttp://embassybel.ru/robots.txt
 forum/viewtopic.php
 forum/whats-new
 forumTeaser
@@ -17470,7 +17480,7 @@ health/*/wp-
 health/QA-Tabbed-ManyTabs-21
 health/drugs/hm-test-all-about-humira
 health/drugs/ozempic-for-weight-loss
-health/files/rhpthttp://indeed.com/robots.txt
+health/files/rhpthttp://inc.com/robots.txt
 health/hm-test-17-proven-tips-to-sleep-better-at-night
 health/hm-test-feature-template-for-sponsorship
 health/mirgraine-headaches
@@ -17638,7 +17648,6 @@ homeimprovement/EmbeddedProfile.htm
 homeloans/*zga_z_guid=
 homepage
 homepage-video-test
-homepage/
 homepage/2013
 homepage/HomepageVideoMetrics.htm
 homes
@@ -17748,7 +17757,7 @@ html5
 http
 http-checker
 http2_data
-http://3.bp.blogspot.com/robots.txt
+http://4.bp.blogspot.com/robots.txt
 http://akparti.org.tr/robots.txt
 http://aliexpress.com/robots.txt
 http://amazon.co.jp/robots.txt
@@ -17764,8 +17773,8 @@ http://apple.com/robots.txt
 http://bbc.com/robots.txt
 http://bbcsfx.acropolis.org.uk/robots.txt
 http://chrome.google.com/robots.txt
-http://creativecommons.org/robots.txt
-http://elegantthemes.com/robots.txt
+http://creatoracademy.youtube.com/robots.txt
+http://en.m.wikipedia.org/robots.txt
 http://expedia.com/robots.txt
 http://gist.github.com/robots.txt
 http://govostis.gr/robots.txt
@@ -17788,7 +17797,7 @@ http://threads.net/robots.txt
 http://tracks.arte.tv/robots.txt
 http://upload.wikimedia.org/robots.txt
 http://use.fontawesome.com/robots.txt
-http://weebly.com/robots.txt
+http://webmasters.googleblog.com/robots.txt
 https://player.cnevids.com
 https://www.iubenda.com/en/help/126238-pricing-faqs-legacy-guide
 https://www.iubenda.com/en/help/142642-old-vs-new-pricing
@@ -18418,6 +18427,7 @@ install.php
 installation
 instant-offers/version
 int/Free_For_Mem
+int_search_summary
 intake
 intarnel/*
 intcmp=
@@ -20008,6 +20018,54 @@ leerberichten
 legal
 legal-b2b
 legal-contact-us
+legal-content/BG/TXT/DOC
+legal-content/BG/TXT/SIG
+legal-content/CS/TXT/DOC
+legal-content/CS/TXT/SIG
+legal-content/DA/TXT/DOC
+legal-content/DA/TXT/SIG
+legal-content/DE/TXT/DOC
+legal-content/DE/TXT/SIG
+legal-content/EL/TXT/DOC
+legal-content/EL/TXT/SIG
+legal-content/EN/TXT/DOC
+legal-content/EN/TXT/SIG
+legal-content/ES/TXT/DOC
+legal-content/ES/TXT/SIG
+legal-content/ET/TXT/DOC
+legal-content/ET/TXT/SIG
+legal-content/FI/TXT/DOC
+legal-content/FI/TXT/SIG
+legal-content/FR/TXT/DOC
+legal-content/FR/TXT/SIG
+legal-content/GA/TXT/DOC
+legal-content/GA/TXT/SIG
+legal-content/HR/TXT/DOC
+legal-content/HR/TXT/SIG
+legal-content/HU/TXT/DOC
+legal-content/HU/TXT/SIG
+legal-content/IT/TXT/DOC
+legal-content/IT/TXT/SIG
+legal-content/LT/TXT/DOC
+legal-content/LT/TXT/SIG
+legal-content/LV/TXT/DOC
+legal-content/LV/TXT/SIG
+legal-content/MT/TXT/DOC
+legal-content/MT/TXT/SIG
+legal-content/NL/TXT/DOC
+legal-content/NL/TXT/SIG
+legal-content/PL/TXT/DOC
+legal-content/PL/TXT/SIG
+legal-content/PT/TXT/DOC
+legal-content/PT/TXT/SIG
+legal-content/RO/TXT/DOC
+legal-content/RO/TXT/SIG
+legal-content/SK/TXT/DOC
+legal-content/SK/TXT/SIG
+legal-content/SL/TXT/DOC
+legal-content/SL/TXT/SIG
+legal-content/SV/TXT/DOC
+legal-content/SV/TXT/SIG
 legal/$
 legal/3874403/
 legal/ai-terms/$
@@ -20105,7 +20163,6 @@ limited-release
 link
 link-intersect
 link-intersect/$
-link?
 link_to
 linked
 linkedin
@@ -20757,6 +20814,7 @@ mod
 mod.php
 mod=
 mod?
+modal-message
 modal_active=
 models
 models/*/ar-redirect
@@ -20995,6 +21053,7 @@ my
 my-MM/$
 my-account
 my-agent/eligibility
+my-eurlex
 my-library
 my-library
 my-list-shows
@@ -22810,11 +22869,12 @@ preferences/
 preferences/manage-cookies
 prefetch
 prefs
+prelex
 premium$
 premium-reports
 premium/
 premium/$
-premium/http://s.w.org/robots.txt
+premium/http://rtbf.be/robots.txt
 premiumsupport/iam/
 premiumsupport/knowledge-center/feedback-no/
 premiumsupport/knowledge-center/feedback-yes/
@@ -22874,6 +22934,7 @@ pricing/payment
 pricing/pro
 primeshow
 print
+print-pdf
 printView=
 printable/pdf
 printer_friendly_story
@@ -23077,6 +23138,7 @@ proplayer
 props/
 proredir?
 prospective-students/undergraduate-redesign
+protected
 proto
 protocol
 protocolexchange/labgroups
@@ -24853,7 +24915,6 @@ s3
 s=
 s=p
 s?
-s?
 s?*rh=n%3A1380045031
 s_id=
 sa
@@ -24883,6 +24944,8 @@ sap/saphana/pilot/offer/confirmation
 sars-cov-2
 savannah-checkouts
 save
+save-document
+save-query
 save/save-agency-search-tool
 save/save-agency-search-tool/export
 savedhomes
@@ -25096,6 +25159,7 @@ search*start=
 search-ads-360
 search-ar-dev
 search-console/scfe
+search-effectiveness.html
 search-results
 search-webglimps
 search.html
@@ -25456,7 +25520,6 @@ sharing/files
 sharing/folders
 shelf/user_shelves
 shenghuo
-shifen/
 ship
 shipping
 shipping-payment
@@ -25967,6 +26030,7 @@ slp/*/b$
 slp/s$
 smart/button
 smart/buttons
+smartapi
 smartmarket
 smartmarket/*/productListInitial.action?
 smbe/
@@ -26193,6 +26257,7 @@ spartan
 spbasic
 spc-source=
 special-promo/2for1
+special/contributor-content
 specialhandling-payments/
 specializations-noperf
 specializations-perf
@@ -27805,6 +27870,7 @@ trips/v1
 trivia/answer
 trk
 trouver
+true/select-store-cookies.html
 trust.php
 trustedstores/images
 trustedstores/js
@@ -28012,7 +28078,6 @@ uk/zazzle
 uki/search
 ul
 uli/trac
-ulink?
 ulk/i
 ulk/sch
 ulk/usr
@@ -29738,7 +29803,6 @@ wp-admin
 wp-admin/
 wp-admin/admin-ajax.php
 wp-admin/admin-ajax.php
-wp-admin/admin-ajax.phphttp://rtbf.be/robots.txt
 wp-admin/admin-ajax.phphttp://starbucks.com/robots.txt
 wp-admin/load-scripts.php
 wp-admin/load-styles.php
@@ -30238,6 +30302,7 @@ zz-test
 500.htm?aspxerrorpath=
 500.html
 978
+1009fab55a45b3b3
 1318
 1319
 1328
