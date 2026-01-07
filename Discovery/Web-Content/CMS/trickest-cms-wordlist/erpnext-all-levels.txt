@@ -6635,6 +6635,9 @@ budget.json
 erpnext/desktop_icon/accounting.json
 desktop_icon/accounting.json
 accounting.json
+erpnext/desktop_icon/opening_&_closing.json
+desktop_icon/opening_&_closing.json
+opening_&_closing.json
 erpnext/desktop_icon/buying.json
 desktop_icon/buying.json
 buying.json
@@ -9247,9 +9250,6 @@ budget.json
 erpnext/workspace_sidebar/accounting.json
 workspace_sidebar/accounting.json
 accounting.json
-erpnext/workspace_sidebar/opening_&_closing.json
-workspace_sidebar/opening_&_closing.json
-opening_&_closing.json
 erpnext/workspace_sidebar/buying.json
 workspace_sidebar/buying.json
 buying.json
@@ -19916,6 +19916,10 @@ erpnext/patches/v16_0/__init__.py
 patches/v16_0/__init__.py
 v16_0/__init__.py
 __init__.py
+erpnext/patches/v16_0/fix_barcode_typo.py
+patches/v16_0/fix_barcode_typo.py
+v16_0/fix_barcode_typo.py
+fix_barcode_typo.py
 erpnext/patches/v16_0/migrate_tax_withholding_data.py
 patches/v16_0/migrate_tax_withholding_data.py
 v16_0/migrate_tax_withholding_data.py

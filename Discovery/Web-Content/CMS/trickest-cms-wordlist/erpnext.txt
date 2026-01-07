@@ -1363,6 +1363,7 @@ erpnext/desktop_icon/home.json
 erpnext/desktop_icon/stock.json
 erpnext/desktop_icon/budget.json
 erpnext/desktop_icon/accounting.json
+erpnext/desktop_icon/opening_&_closing.json
 erpnext/desktop_icon/buying.json
 erpnext/desktop_icon/erpnext.json
 erpnext/change_log/v6/v6_22_0.md
@@ -1929,7 +1930,6 @@ erpnext/workspace_sidebar/home.json
 erpnext/workspace_sidebar/stock.json
 erpnext/workspace_sidebar/budget.json
 erpnext/workspace_sidebar/accounting.json
-erpnext/workspace_sidebar/opening_&_closing.json
 erpnext/workspace_sidebar/buying.json
 erpnext/hooks.py
 erpnext/accounts/print_format_field_template/__init__.py
@@ -4110,6 +4110,7 @@ erpnext/patches/v16_0/set_reporting_currency.py
 erpnext/patches/v16_0/update_currency_exchange_settings_for_frankfurter.py
 erpnext/patches/v16_0/set_mr_picked_qty.py
 erpnext/patches/v16_0/__init__.py
+erpnext/patches/v16_0/fix_barcode_typo.py
 erpnext/patches/v16_0/migrate_tax_withholding_data.py
 erpnext/patches/v16_0/rename_subcontracted_quantity.py
 erpnext/patches/v16_0/migrate_budget_records_to_new_structure.py
