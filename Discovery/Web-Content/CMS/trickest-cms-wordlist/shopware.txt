@@ -5918,6 +5918,8 @@ tests/devops/Core/DevOps/StaticAnalyse/PHPStan/Rules/data/NoDropStatementInUpdat
 tests/devops/Core/DevOps/StaticAnalyse/PHPStan/Rules/data/MockingSimpleObjects/commercial-unit-test.php
 tests/devops/Core/DevOps/StaticAnalyse/PHPStan/Rules/data/MockingSimpleObjects/shopware-unit-test.php
 tests/devops/Core/DevOps/StaticAnalyse/PHPStan/Rules/data/MockingSimpleObjects/parent-class-test.php
+tests/devops/Core/DevOps/StaticAnalyse/PHPStan/Rules/data/NoStaticRuntimeExceptionReturnRuleTest/DummyException.php
+tests/devops/Core/DevOps/StaticAnalyse/PHPStan/Rules/data/NoStaticRuntimeExceptionReturnRuleTest/NotException.php
 tests/devops/Core/DevOps/StaticAnalyse/PHPStan/Rules/data/MessagesShouldNotUsePHPStanTypes/AsyncMessageImportingPHPStanType.php
 tests/devops/Core/DevOps/StaticAnalyse/PHPStan/Rules/data/MessagesShouldNotUsePHPStanTypes/AsyncMessageUsingNativeTypes.php
 tests/devops/Core/DevOps/StaticAnalyse/PHPStan/Rules/data/MessagesShouldNotUsePHPStanTypes/RegularClassImportingPHPStanType.php
@@ -5949,6 +5951,7 @@ tests/devops/Core/DevOps/StaticAnalyse/PHPStan/Rules/NoRouteOverrideInDecorators
 tests/devops/Core/DevOps/StaticAnalyse/PHPStan/Rules/AttributeFinalRuleTest.php
 tests/devops/Core/DevOps/StaticAnalyse/PHPStan/Rules/RouteScopeRuleTest.php
 tests/devops/Core/DevOps/StaticAnalyse/PHPStan/Rules/ShopwareNamespaceStyleRuleTest.php
+tests/devops/Core/DevOps/StaticAnalyse/PHPStan/Rules/NoStaticRuntimeExceptionReturnRuleTest.php
 tests/devops/Core/DevOps/StaticAnalyse/PHPStan/Rules/NameConstantEntityDefinitionTest.php
 tests/devops/Core/DevOps/StaticAnalyse/PHPStan/Rules/PropertyNativeTypeRuleTest.php
 tests/devops/Core/DevOps/StaticAnalyse/PHPStan/Rules/UseCLIContextRuleTest.php
@@ -6180,6 +6183,7 @@ tests/unit/Core/Content/Product/SalesChannel/FindVariant/FindProductVariantRoute
 tests/unit/Core/Content/Product/SalesChannel/FindVariant/FoundCombinationTest.php
 tests/unit/Core/Content/Product/SalesChannel/FindVariant/FindProductVariantRouteTest.php
 tests/unit/Core/Content/Product/SalesChannel/SalesChannelProductDefinitionTest.php
+tests/unit/Core/Content/Product/SalesChannel/CrossSelling/ProductCrossSellingRouteTest.php
 tests/unit/Core/Content/Product/SalesChannel/ProductAvailableFilterTest.php
 tests/unit/Core/Content/Product/SalesChannel/Detail/AvailableCombinationLoaderTest.php
 tests/unit/Core/Content/Product/SalesChannel/Detail/ProductDetailRouteTest.php
@@ -6625,9 +6629,9 @@ tests/unit/Core/Checkout/Gateway/SalesChannel/CheckoutGatewayRouteResponseTest.p
 tests/unit/Core/Checkout/Gateway/Command/AddCartErrorCommandTest.php
 tests/unit/Core/Checkout/Gateway/Command/Executor/CheckoutGatewayCommandExecutorTest.php
 tests/unit/Core/Checkout/Gateway/Command/Registry/CheckoutGatewayCommandRegistryTest.php
-tests/unit/Core/Checkout/Gateway/Command/_fixture/TestCheckoutGatewayFooCommand.php
-tests/unit/Core/Checkout/Gateway/Command/_fixture/TestCheckoutGatewayHandler.php
-tests/unit/Core/Checkout/Gateway/Command/_fixture/TestCheckoutGatewayCommand.php
+tests/unit/Core/Checkout/Gateway/Command/_fixture/StubCheckoutGatewayFooCommand.php
+tests/unit/Core/Checkout/Gateway/Command/_fixture/StubCheckoutGatewayHandler.php
+tests/unit/Core/Checkout/Gateway/Command/_fixture/StubCheckoutGatewayCommand.php
 tests/unit/Core/Checkout/Gateway/Command/AbstractCheckoutGatewayCommandTest.php
 tests/unit/Core/Checkout/Gateway/Command/Struct/CheckoutGatewayPayloadStructTest.php
 tests/unit/Core/Checkout/Gateway/Command/AddPaymentMethodCommandTest.php
@@ -6754,6 +6758,7 @@ tests/unit/Core/Checkout/Customer/Subscriber/AddressHashSubscriberTest.php
 tests/unit/Core/Checkout/Customer/Subscriber/CustomerRemoteAddressSubscriberTest.php
 tests/unit/Core/Checkout/Customer/Subscriber/ProductReviewSubscriberTest.php
 tests/unit/Core/Checkout/Customer/Subscriber/CustomerFlowEventsSubscriberTest.php
+tests/unit/Core/Checkout/Customer/Subscriber/CustomerAddressSubscriberTest.php
 tests/unit/Core/Checkout/Customer/Subscriber/CustomerBeforeDeleteSubscriberTest.php
 tests/unit/Core/Checkout/Customer/Rule/AffiliateCodeRuleTest.php
 tests/unit/Core/Checkout/Customer/Rule/DaysSinceLastLoginRuleTest.php
@@ -6785,11 +6790,13 @@ tests/unit/Core/Checkout/Customer/Api/CustomerGroupRegistrationActionControllerT
 tests/unit/Core/Checkout/Customer/SalesChannel/RegisterRouteTest.php
 tests/unit/Core/Checkout/Customer/SalesChannel/ConvertGuestRouteTest.php
 tests/unit/Core/Checkout/Customer/SalesChannel/AccountServiceTest.php
+tests/unit/Core/Checkout/Customer/SalesChannel/ListAddressRouteTest.php
 tests/unit/Core/Checkout/Customer/SalesChannel/RegisterConfirmRouteTest.php
 tests/unit/Core/Checkout/Customer/SalesChannel/UpsertAddressRouteTest.php
 tests/unit/Core/Checkout/Customer/SalesChannel/SendPasswordRecoveryMailRouteTest.php
 tests/unit/Core/Checkout/Customer/SalesChannel/ChangeCustomerProfileRouteTest.php
 tests/unit/Core/Checkout/Customer/SalesChannel/ImitateCustomerRouteTest.php
+tests/unit/Core/Checkout/Customer/SalesChannel/SalesChannelCustomerAddressDefinitionTest.php
 tests/unit/Core/Checkout/Customer/SalesChannel/DownloadRouteTest.php
 tests/unit/Core/Checkout/Shipping/Cart/ShippingMethodValidatorTest.php
 tests/unit/Core/Checkout/Shipping/Cart/Error/ShippingMethodBlockedErrorTest.php
@@ -7153,10 +7160,10 @@ tests/unit/Core/Framework/Gateway/Context/Command/AddCustomerMessageCommandTest.
 tests/unit/Core/Framework/Gateway/Context/Command/Registry/ContextGatewayCommandRegistryTest.php
 tests/unit/Core/Framework/Gateway/Context/Command/AbstractContextGatewayCommandTest.php
 tests/unit/Core/Framework/Gateway/Context/Command/ChangeCurrencyCommandTest.php
-tests/unit/Core/Framework/Gateway/Context/Command/_fixture/TestContextGatewayHandler.php
-tests/unit/Core/Framework/Gateway/Context/Command/_fixture/TestAllCommandsGatewayCommandHandler.php
-tests/unit/Core/Framework/Gateway/Context/Command/_fixture/TestContextGatewayCommand.php
-tests/unit/Core/Framework/Gateway/Context/Command/_fixture/TestContextGatewayFooCommand.php
+tests/unit/Core/Framework/Gateway/Context/Command/_fixture/StubContextGatewayHandler.php
+tests/unit/Core/Framework/Gateway/Context/Command/_fixture/StubContextGatewayFooCommand.php
+tests/unit/Core/Framework/Gateway/Context/Command/_fixture/StubContextGatewayCommand.php
+tests/unit/Core/Framework/Gateway/Context/Command/_fixture/StubAllCommandsGatewayCommandHandler.php
 tests/unit/Core/Framework/Gateway/Context/Command/Struct/ContextGatewayPayloadStructTest.php
 tests/unit/Core/Framework/Gateway/Context/Command/Handler/RegisterCustomerCommandHandlerTest.php
 tests/unit/Core/Framework/Gateway/Context/Command/Handler/ChangeAddressCommandHandlerTest.php
@@ -8303,6 +8310,7 @@ tests/migration/Core/V6_7/Migration1740563553AddAppRequestedPrivilegesTest.php
 tests/migration/Core/V6_7/Migration1756068712FixOrderAddressLastNameLengthTest.php
 tests/migration/Core/V6_7/Migration1763377575SendEmailAfterPasswordChangeFlowTest.php
 tests/migration/Core/V6_7/Migration1743064966CartConfigSubtotalTaxColumnTest.php
+tests/migration/Core/V6_7/Migration1765205483AddTrackOffcanvasCartToAnalyticsTest.php
 tests/migration/Core/V6_7/Migration1728040169AddPrimaryOrderDeliveryTest.php
 tests/migration/Core/V6_7/Migration1764580028AddAltAttributeToOrderConfirmationMailImagesTest.php
 tests/migration/Core/V6_7/Migration1763544592UpdateGroupRegistrationMailTemplatesTest.php
@@ -8877,6 +8885,7 @@ tests/integration/Core/System/Snippet/Files/_fixtures/Apps/AppWithSnippets/Resou
 tests/integration/Core/System/Snippet/Files/_fixtures/Apps/AppWithSnippets/Resources/snippet/storefront.en.json
 tests/integration/Core/System/Snippet/Files/_fixtures/Apps/AppWithSnippets/manifest.xml
 tests/integration/Core/System/Snippet/Subscriber/CustomFieldSubscriberTest.php
+tests/integration/Core/System/Snippet/Service/TranslationLoaderTest.php
 tests/integration/Core/System/Snippet/SnippetServiceTest.php
 tests/integration/Core/System/CustomEntity/Xml/Config/_fixtures/other/flags.json
 tests/integration/Core/System/CustomEntity/Xml/Config/_fixtures/plugins/SwagTestCmsAwareAndAdminUi/src/Resources/config/admin-ui.xml
@@ -9350,6 +9359,7 @@ tests/integration/Core/Framework/DataAbstractionLayer/Search/GroupByTest.php
 tests/integration/Core/Framework/DataAbstractionLayer/Search/JoinFilterTest.php
 tests/integration/Core/Framework/DataAbstractionLayer/Search/Term/Filter/TokenFilterTest.php
 tests/integration/Core/Framework/DataAbstractionLayer/Search/Term/EntityScoreBuilderTest.php
+tests/integration/Core/Framework/DataAbstractionLayer/Search/MultiJoinFilterLimitationTest.php
 tests/integration/Core/Framework/DataAbstractionLayer/Search/EntityAggregatorTest.php
 tests/integration/Core/Framework/DataAbstractionLayer/Search/Aggregation/Metric/RangeAggregationTest.php
 tests/integration/Core/Framework/DataAbstractionLayer/Search/AntiJoinSearchTest.php
@@ -9474,6 +9484,7 @@ tests/integration/Core/Framework/Adapter/Cache/Script/_fixtures/InvalidationCase
 tests/integration/Core/Framework/Adapter/Cache/Script/_fixtures/InvalidationCases/Resources/scripts/cache-invalidation/filter-by-entity.twig
 tests/integration/Core/Framework/Adapter/Cache/Script/_fixtures/InvalidationCases/Resources/scripts/cache-invalidation/simple-script.twig
 tests/integration/Core/Framework/Adapter/Cache/Script/_fixtures/InvalidationCases/manifest.xml
+tests/integration/Core/Framework/Adapter/Cache/Http/CacheResponseSubscriberTest.php
 tests/integration/Core/Framework/Adapter/Cache/InvalidatorStorage/MySQLInvalidatorStorageTest.php
 tests/integration/Core/Framework/Adapter/Cache/InvalidatorStorage/RedisInvalidatorStorageTest.php
 tests/integration/Core/Framework/Adapter/Cache/RedisConnectionFactoryTest.php
@@ -10224,6 +10235,7 @@ src/Administration/Resources/app/administration/technical-docs/08-i18n/01-overvi
 src/Administration/Resources/app/administration/technical-docs/05-global-object/02-feature-flags-deprecations.md
 src/Administration/Resources/app/administration/technical-docs/05-global-object/03-context-auth.md
 src/Administration/Resources/app/administration/technical-docs/05-global-object/01-global-shopware-object.md
+src/Administration/Resources/app/administration/lighthouse-auth.js
 src/Administration/Resources/app/administration/.prettierrc.js
 src/Administration/Resources/app/administration/.eslintignore
 src/Administration/Resources/app/administration/blocks-list.json
@@ -10368,6 +10380,7 @@ src/Administration/Resources/app/administration/README.md
 src/Administration/Resources/app/administration/.stylelintrc
 src/Administration/Resources/app/administration/AGENTS.md
 src/Administration/Resources/app/administration/.prettierignore
+src/Administration/Resources/app/administration/lighthouserc.js
 src/Administration/Resources/app/administration/.babelrc
 src/Administration/Resources/app/administration/eslint-rules/test-rules/await-async-functions.js
 src/Administration/Resources/app/administration/eslint-rules/test-rules/index.js
@@ -11495,6 +11508,12 @@ src/Administration/Resources/app/administration/src/module/sw-mail-template/comp
 src/Administration/Resources/app/administration/src/module/sw-mail-template/component/sw-mail-template-list/sw-mail-template-list.spec.js
 src/Administration/Resources/app/administration/src/module/sw-mail-template/component/sw-mail-template-list/sw-mail-template-list.html.twig
 src/Administration/Resources/app/administration/src/module/sw-mail-template/acl/index.js
+src/Administration/Resources/app/administration/src/module/sw-mail-template/view/sw-mail-template-view-templates/index.js
+src/Administration/Resources/app/administration/src/module/sw-mail-template/view/sw-mail-template-view-templates/sw-mail-template-view-templates.html.twig
+src/Administration/Resources/app/administration/src/module/sw-mail-template/view/sw-mail-template-view-templates/sw-mail-template-view-templates.spec.js
+src/Administration/Resources/app/administration/src/module/sw-mail-template/view/sw-mail-template-view-header-footer/index.js
+src/Administration/Resources/app/administration/src/module/sw-mail-template/view/sw-mail-template-view-header-footer/sw-mail-template-view-header-footer.spec.js
+src/Administration/Resources/app/administration/src/module/sw-mail-template/view/sw-mail-template-view-header-footer/sw-mail-template-view-header-footer.html.twig
 src/Administration/Resources/app/administration/src/module/sw-settings-currency/page/sw-settings-currency-list/sw-settings-currency-list.html.twig
 src/Administration/Resources/app/administration/src/module/sw-settings-currency/page/sw-settings-currency-list/sw-settings-currency-list.spec.js
 src/Administration/Resources/app/administration/src/module/sw-settings-currency/page/sw-settings-currency-list/index.js
@@ -13039,7 +13058,6 @@ src/Administration/Resources/app/administration/src/module/sw-cms/acl/index.ts
 src/Administration/Resources/app/administration/src/module/sw-cms/test-utils/index.js
 src/Administration/Resources/app/administration/src/module/sw-cms/constant/sw-cms.constant.ts
 src/Administration/Resources/app/administration/src/module/sw-import-export/page/sw-import-export/sw-import-export.html.twig
-src/Administration/Resources/app/administration/src/module/sw-import-export/page/sw-import-export/sw-import-export.scss
 src/Administration/Resources/app/administration/src/module/sw-import-export/page/sw-import-export/index.js
 src/Administration/Resources/app/administration/src/module/sw-import-export/snippet/en.json
 src/Administration/Resources/app/administration/src/module/sw-import-export/snippet/de.json
@@ -13079,7 +13097,6 @@ src/Administration/Resources/app/administration/src/module/sw-import-export/comp
 src/Administration/Resources/app/administration/src/module/sw-import-export/component/profile-wizard/sw-import-export-new-profile-wizard/index.js
 src/Administration/Resources/app/administration/src/module/sw-import-export/component/profile-wizard/sw-import-export-new-profile-wizard/sw-import-export-new-profile-wizard.html.twig
 src/Administration/Resources/app/administration/src/module/sw-import-export/component/profile-wizard/sw-import-export-new-profile-wizard-general-page/index.js
-src/Administration/Resources/app/administration/src/module/sw-import-export/component/profile-wizard/sw-import-export-new-profile-wizard-general-page/sw-import-export-new-profile-wizard-general-page.scss
 src/Administration/Resources/app/administration/src/module/sw-import-export/component/profile-wizard/sw-import-export-new-profile-wizard-general-page/sw-import-export-new-profile-wizard-general-page.html.twig
 src/Administration/Resources/app/administration/src/module/sw-import-export/component/profile-wizard/sw-import-export-new-profile-wizard-csv-page/index.js
 src/Administration/Resources/app/administration/src/module/sw-import-export/component/profile-wizard/sw-import-export-new-profile-wizard-csv-page/sw-import-export-new-profile-wizard-csv-page.html.twig
@@ -16291,6 +16308,7 @@ src/Core/DevOps/StaticAnalyze/PHPStan/Rules/NoDALAutoload.php
 src/Core/DevOps/StaticAnalyze/PHPStan/Rules/DomainExceptionRule.php
 src/Core/DevOps/StaticAnalyze/PHPStan/Rules/PropertyNativeTypeRule.php
 src/Core/DevOps/StaticAnalyze/PHPStan/Rules/ExtensionRule.php
+src/Core/DevOps/StaticAnalyze/PHPStan/Rules/NoRuntimeExceptionInDomainExceptionsRule.php
 src/Core/DevOps/StaticAnalyze/PHPStan/Rules/NoNewRequestInStorefrontRule.php
 src/Core/DevOps/StaticAnalyze/PHPStan/Rules/NoUnconfiguredMetricAllowed.php
 src/Core/DevOps/StaticAnalyze/PHPStan/Rules/DecorationPatternRule.php
@@ -17018,6 +17036,7 @@ src/Core/Checkout/Customer/Subscriber/CustomerSalutationSubscriber.php
 src/Core/Checkout/Customer/Subscriber/CustomerChangePasswordSubscriber.php
 src/Core/Checkout/Customer/Subscriber/CustomerBeforeDeleteSubscriber.php
 src/Core/Checkout/Customer/Subscriber/CustomerFlowEventsSubscriber.php
+src/Core/Checkout/Customer/Subscriber/CustomerAddressSubscriber.php
 src/Core/Checkout/Customer/Subscriber/CustomerLogoutSubscriber.php
 src/Core/Checkout/Customer/Subscriber/ProductReviewSubscriber.php
 src/Core/Checkout/Customer/Rule/CustomerAgeRule.php
@@ -17086,6 +17105,7 @@ src/Core/Checkout/Customer/SalesChannel/AbstractListAddressRoute.php
 src/Core/Checkout/Customer/SalesChannel/ListAddressRoute.php
 src/Core/Checkout/Customer/SalesChannel/AbstractRegisterConfirmRoute.php
 src/Core/Checkout/Customer/SalesChannel/ConvertGuestRoute.php
+src/Core/Checkout/Customer/SalesChannel/SalesChannelCustomerAddressEntity.php
 src/Core/Checkout/Customer/SalesChannel/CustomerResponse.php
 src/Core/Checkout/Customer/SalesChannel/AbstractSwitchDefaultAddressRoute.php
 src/Core/Checkout/Customer/SalesChannel/AbstractChangeLanguageRoute.php
@@ -17102,6 +17122,7 @@ src/Core/Checkout/Customer/SalesChannel/AbstractChangeEmailRoute.php
 src/Core/Checkout/Customer/SalesChannel/AbstractCustomerRoute.php
 src/Core/Checkout/Customer/SalesChannel/AbstractDeleteCustomerRoute.php
 src/Core/Checkout/Customer/SalesChannel/CustomerRecoveryIsExpiredRoute.php
+src/Core/Checkout/Customer/SalesChannel/SalesChannelCustomerAddressDefinition.php
 src/Core/Checkout/Customer/SalesChannel/AbstractConvertGuestRoute.php
 src/Core/Checkout/Customer/SalesChannel/AccountNewsletterRecipientResult.php
 src/Core/Checkout/Customer/SalesChannel/AbstractLoadWishlistRoute.php
@@ -17111,6 +17132,7 @@ src/Core/Checkout/Customer/SalesChannel/AbstractLogoutRoute.php
 src/Core/Checkout/Customer/SalesChannel/CustomerGroupRegistrationSettingsRouteResponse.php
 src/Core/Checkout/Customer/SalesChannel/AbstractCustomerRecoveryIsExpiredRoute.php
 src/Core/Checkout/Customer/SalesChannel/ChangePasswordRoute.php
+src/Core/Checkout/Customer/SalesChannel/SalesChannelCustomerAddressCollection.php
 src/Core/Checkout/Customer/SalesChannel/AbstractUpsertAddressRoute.php
 src/Core/Checkout/Customer/SalesChannel/CustomerAddressValidationTrait.php
 src/Core/Checkout/Customer/SalesChannel/SwitchDefaultAddressRoute.php
@@ -19739,6 +19761,7 @@ src/Core/Framework/Api/ApiDefinition/Generator/Schema/AdminApi/components/schema
 src/Core/Framework/Api/ApiDefinition/Generator/Schema/AdminApi/components/schemas/flowBuilderActionsResponse.json
 src/Core/Framework/Api/ApiDefinition/Generator/Schema/AdminApi/components/schemas/businessEventsResponse.json
 src/Core/Framework/Api/ApiDefinition/Generator/Schema/AdminApi/components/schemas/Criteria.json
+src/Core/Framework/Api/ApiDefinition/Generator/Schema/AdminApi/components/schemas/SalesChannelAnalytics.json
 src/Core/Framework/Api/ApiDefinition/Generator/Schema/AdminApi/components/schemas/OAuthScopes.json
 src/Core/Framework/Api/ApiDefinition/Generator/Schema/AdminApi/components/schemas/infoConfigResponse.json
 src/Core/Framework/Api/ApiDefinition/Generator/OpenApi/OpenApiSchemaBuilder.php
@@ -20857,6 +20880,7 @@ src/Core/Migration/V6_7/Migration1697112044PaymentAndShippingTechnicalNameRequir
 src/Core/Migration/V6_7/Migration1740563553AddAppRequestedPrivileges.php
 src/Core/Migration/V6_7/Migration1754295570DocumentActivateReturnAddress.php
 src/Core/Migration/V6_7/Migration1763125902AddOrderLineItemProductTypePayload.php
+src/Core/Migration/V6_7/Migration1767861589AddOpenOffcanvasAfterAddToCartConfigSetting.php
 src/Core/Migration/V6_7/Migration1756068709FixCustomerAddressFirstNameLength.php
 src/Core/Migration/V6_7/Migration1756068712FixOrderAddressLastNameLength.php
 src/Core/Migration/V6_7/Migration1763125891AddProductTypeColumn.php
@@ -20910,6 +20934,7 @@ src/Core/Migration/V6_7/Migration1720610755RemoveDefaultPaymentMethodFromCustome
 src/Core/Migration/V6_7/Migration1742199550MeasurementDisplayUnitTable.php
 src/Core/Migration/V6_7/Migration1720603803RemoveDefaultPaymentMethodFlows.php
 src/Core/Migration/V6_7/Migration1720603803RemoveDefaultPaymentMethodRule.php
+src/Core/Migration/V6_7/Migration1765205483AddTrackOffcanvasCartToAnalytics.php
 src/Core/Migration/V6_7/Migration1754892246FixWordingMistakeInEmailTemplates.php
 src/Core/PlatformRequest.php
 src/Core/LICENSE
@@ -21264,6 +21289,7 @@ src/Storefront/Resources/views/storefront/component/checkout/cart-alerts.html.tw
 src/Storefront/Resources/views/storefront/component/checkout/hidden-line-items-information.html.twig
 src/Storefront/Resources/views/storefront/component/checkout/add-product-by-number.html.twig
 src/Storefront/Resources/views/storefront/component/checkout/offcanvas-cart-summary.html.twig
+src/Storefront/Resources/views/storefront/component/checkout/add-to-cart-alert-template.html.twig
 src/Storefront/Resources/views/storefront/component/pagination.html.twig
 src/Storefront/Resources/views/storefront/component/shipping/shipping-form.html.twig
 src/Storefront/Resources/views/storefront/component/shipping/shipping-method.html.twig
@@ -21516,7 +21542,20 @@ src/Storefront/Resources/app/storefront/test/plugin/main-menu/offcanvas-menu.plu
 src/Storefront/Resources/app/storefront/test/plugin/cookie-configuration/cookie-configuration.plugin.test.js
 src/Storefront/Resources/app/storefront/test/plugin/address-serach/address-search.plugin.test.js
 src/Storefront/Resources/app/storefront/test/plugin/google-analytics/google-analytics.plugin.test.js
+src/Storefront/Resources/app/storefront/test/plugin/google-analytics/event/add-to-cart.event.test.js
+src/Storefront/Resources/app/storefront/test/plugin/google-analytics/event/add-to-cart-by-number.event.test.js
+src/Storefront/Resources/app/storefront/test/plugin/google-analytics/event/purchase.event.test.js
+src/Storefront/Resources/app/storefront/test/plugin/google-analytics/event/view-search-results.event.test.js
+src/Storefront/Resources/app/storefront/test/plugin/google-analytics/event/view-cart.event.test.js
 src/Storefront/Resources/app/storefront/test/plugin/google-analytics/event/view-item-list.event.test.js
+src/Storefront/Resources/app/storefront/test/plugin/google-analytics/event/view-item.event.test.js
+src/Storefront/Resources/app/storefront/test/plugin/google-analytics/event/add-payment-info.event.test.js
+src/Storefront/Resources/app/storefront/test/plugin/google-analytics/event/add-to-wishlist.event.test.js
+src/Storefront/Resources/app/storefront/test/plugin/google-analytics/event/remove-from-cart.event.test.js
+src/Storefront/Resources/app/storefront/test/plugin/google-analytics/event/begin-checkout-on-cart.event.test.js
+src/Storefront/Resources/app/storefront/test/plugin/google-analytics/event/add-shipping-info.event.test.js
+src/Storefront/Resources/app/storefront/test/plugin/google-analytics/event/remove-from-wishlist.event.test.js
+src/Storefront/Resources/app/storefront/test/plugin/google-analytics/line-item.helper.test.js
 src/Storefront/Resources/app/storefront/test/plugin/add-to-cart/add-to-cart.plugin.test.js
 src/Storefront/Resources/app/storefront/test/plugin/ajax-modal/ajax-modal.plugin.test.js
 src/Storefront/Resources/app/storefront/test/plugin/quantity-selector/quantity-selector.plugin.test.js
@@ -22154,9 +22193,15 @@ src/Storefront/Resources/app/storefront/src/plugin/google-analytics/events/begin
 src/Storefront/Resources/app/storefront/src/plugin/google-analytics/events/checkout-progress.event.js
 src/Storefront/Resources/app/storefront/src/plugin/google-analytics/events/search-ajax.event.js
 src/Storefront/Resources/app/storefront/src/plugin/google-analytics/events/login.event.js
+src/Storefront/Resources/app/storefront/src/plugin/google-analytics/events/add-shipping-info.event.js
+src/Storefront/Resources/app/storefront/src/plugin/google-analytics/events/add-payment-info.event.js
 src/Storefront/Resources/app/storefront/src/plugin/google-analytics/events/sign-up.event.js
 src/Storefront/Resources/app/storefront/src/plugin/google-analytics/events/purchase.event.js
 src/Storefront/Resources/app/storefront/src/plugin/google-analytics/events/view-search-results.js
+src/Storefront/Resources/app/storefront/src/plugin/google-analytics/events/view-cart.event.js
+src/Storefront/Resources/app/storefront/src/plugin/google-analytics/events/add-to-wishlist.event.js
+src/Storefront/Resources/app/storefront/src/plugin/google-analytics/events/remove-from-wishlist.event.js
+src/Storefront/Resources/app/storefront/src/plugin/google-analytics/product-page.helper.js
 src/Storefront/Resources/app/storefront/src/plugin/google-analytics/event-aware-analytics-event.js
 src/Storefront/Resources/app/storefront/src/plugin/google-analytics/analytics-event.js
 src/Storefront/Resources/app/storefront/src/plugin/add-to-cart/add-to-cart.plugin.js

@@ -3502,8 +3502,10 @@ core/modules/system/tests/themes/test_theme/templates/theme-test-registered-by-m
 core/modules/system/tests/themes/test_theme/templates/theme-test-specific-suggestions--variant.html.twig
 core/modules/system/tests/themes/test_theme/templates/theme-test--suggestion.html.twig
 core/modules/system/tests/themes/test_theme/templates/node.html.twig
+core/modules/system/tests/themes/test_theme/templates/field--comment.html.twig
 core/modules/system/tests/themes/test_theme/templates/theme-test-general-suggestions--module-override.html.twig
 core/modules/system/tests/themes/test_theme/templates/theme-test-specific-suggestions--variant--foo.html.twig
+core/modules/system/tests/themes/test_theme/templates/field--comment-other.html.twig
 core/modules/system/tests/themes/test_theme/templates/theme-test-suggestions--module-override.html.twig
 core/modules/system/tests/themes/test_theme/theme_test.template_test.html.twig
 core/modules/system/tests/themes/test_theme/theme-test-function-template-override.html.twig
@@ -7114,6 +7116,7 @@ core/modules/comment/tests/src/Functional/CommentNonNodeTest.php
 core/modules/comment/tests/src/Functional/CommentFieldsTest.php
 core/modules/comment/tests/src/Kernel/CommentItemTest.php
 core/modules/comment/tests/src/Kernel/CommentOrphanTest.php
+core/modules/comment/tests/src/Kernel/CommentFieldPreprocessTest.php
 core/modules/comment/tests/src/Kernel/CommentBaseFieldTest.php
 core/modules/comment/tests/src/Kernel/CommentFieldAccessTest.php
 core/modules/comment/tests/src/Kernel/Plugin/migrate/source/d7/CommentEntityTranslationTest.php
@@ -10423,6 +10426,7 @@ core/modules/link/tests/src/Unit/Plugin/Validation/Constraint/LinkTypeConstraint
 core/modules/link/tests/src/Unit/Plugin/Validation/Constraint/LinkAccessConstraintValidatorTest.php
 core/modules/link/tests/src/Unit/Plugin/Validation/Constraint/LinkExternalProtocolsConstraintValidatorTest.php
 core/modules/link/tests/src/Unit/Plugin/Validation/Constraint/LinkNotExistingInternalConstraintValidatorTest.php
+core/modules/link/tests/src/Unit/Plugin/Validation/Constraint/LinkTitleRequiredConstraintValidatorTest.php
 core/modules/link/tests/src/Unit/Plugin/migrate/process/FieldLinkTest.php
 core/modules/link/tests/src/Unit/Plugin/migrate/field/d6/LinkFieldTest.php
 core/modules/link/tests/src/Unit/LinkFormatterTest.php
@@ -10433,10 +10437,12 @@ core/modules/link/link.libraries.yml
 core/modules/link/link.info.yml
 core/modules/link/link.module
 core/modules/link/src/Plugin/Validation/Constraint/LinkExternalProtocolsConstraint.php
+core/modules/link/src/Plugin/Validation/Constraint/LinkTitleRequiredConstraint.php
 core/modules/link/src/Plugin/Validation/Constraint/LinkNotExistingInternalConstraintValidator.php
 core/modules/link/src/Plugin/Validation/Constraint/LinkTypeConstraintValidator.php
 core/modules/link/src/Plugin/Validation/Constraint/LinkTypeConstraint.php
 core/modules/link/src/Plugin/Validation/Constraint/LinkAccessConstraint.php
+core/modules/link/src/Plugin/Validation/Constraint/LinkTitleRequiredConstraintValidator.php
 core/modules/link/src/Plugin/Validation/Constraint/LinkAccessConstraintValidator.php
 core/modules/link/src/Plugin/Validation/Constraint/LinkExternalProtocolsConstraintValidator.php
 core/modules/link/src/Plugin/Validation/Constraint/LinkNotExistingInternalConstraint.php
@@ -11842,7 +11848,6 @@ core/tests/Drupal/Tests/Core/Plugin/Discovery/HookDiscoveryTest.php
 core/tests/Drupal/Tests/Core/Plugin/Discovery/TestDerivativeDiscoveryWithObject.php
 core/tests/Drupal/Tests/Core/Plugin/Discovery/Fixtures/test_1/test_1.test.yml
 core/tests/Drupal/Tests/Core/Plugin/Discovery/Fixtures/test_2/test_2.test.yml
-core/tests/Drupal/Tests/Core/Plugin/Discovery/ContainerDerivativeDiscoveryDecoratorTest.php
 core/tests/Drupal/Tests/Core/Plugin/Discovery/TestContainerDerivativeDiscovery.php
 core/tests/Drupal/Tests/Core/Plugin/Discovery/DerivativeDiscoveryDecoratorTest.php
 core/tests/Drupal/Tests/Core/Plugin/Discovery/YamlDirectoryDiscoveryTest.php
