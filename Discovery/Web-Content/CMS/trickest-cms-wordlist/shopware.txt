@@ -10007,6 +10007,7 @@ tests/acceptance/.prettierignore
 tests/acceptance/helpers/locale-helpers.ts
 tests/acceptance/helpers/recaptcha-helpers.ts
 tests/acceptance/tsconfig.json
+tests/acceptance/scripts/runNpmAudit.ts
 tests/acceptance/package-lock.json
 tests/acceptance/.prettierrc
 tests/acceptance/package.json
@@ -10471,6 +10472,7 @@ src/Administration/Resources/app/administration/eslint-rules/deprecation-rules/n
 src/Administration/Resources/app/administration/eslint-rules/deprecation-rules/no-deprecated-component-usage-checks/mt-email-field.check.js
 src/Administration/Resources/app/administration/eslint-rules/deprecation-rules/no-deprecated-component-usage-checks/mt-button.check.js
 src/Administration/Resources/app/administration/eslint-rules/deprecation-rules/no-deprecated-component-usage-checks/mt-textarea.check.js
+src/Administration/Resources/app/administration/eslint-rules/deprecation-rules/no-deprecated-component-usage-checks/sw-entity-listing.check.js
 src/Administration/Resources/app/administration/eslint-rules/deprecation-rules/no-deprecated-component-usage-checks/mt-banner.check.js
 src/Administration/Resources/app/administration/eslint-rules/deprecation-rules/no-deprecated-component-usage-checks/mt-text-field.check.js
 src/Administration/Resources/app/administration/eslint-rules/deprecation-rules/no-deprecated-component-usage-checks/helper.js
@@ -14069,6 +14071,7 @@ src/Administration/Resources/app/administration/src/app/component/utils/sw-licen
 src/Administration/Resources/app/administration/src/app/component/utils/sw-notification-center-item/index.js
 src/Administration/Resources/app/administration/src/app/component/utils/sw-notification-center-item/sw-notification-center-item.html.twig
 src/Administration/Resources/app/administration/src/app/component/utils/sw-notification-center-item/sw-notification-center-item.scss
+src/Administration/Resources/app/administration/src/app/component/utils/sw-notification-center-item/sw-notification-center-item.spec.js
 src/Administration/Resources/app/administration/src/app/component/utils/sw-progress-bar/sw-progress-bar.html.twig
 src/Administration/Resources/app/administration/src/app/component/utils/sw-progress-bar/index.js
 src/Administration/Resources/app/administration/src/app/component/utils/sw-progress-bar/sw-progress-bar.scss
@@ -18159,6 +18162,7 @@ src/Core/Framework/Script/Execution/FunctionHook.php
 src/Core/Framework/Script/Execution/ScriptExecutor.php
 src/Core/Framework/Script/Execution/ScriptLoader.php
 src/Core/Framework/Script/Execution/OptionalFunctionHook.php
+src/Core/Framework/Script/Execution/ScriptEnvironmentFactory.php
 src/Core/Framework/Script/Execution/InterfaceHook.php
 src/Core/Framework/Script/Execution/TraceHook.php
 src/Core/Framework/Script/Execution/DeprecatedHook.php
@@ -22389,6 +22393,7 @@ src/Storefront/Resources/app/storefront/build/start-hot-reload.js
 src/Storefront/Resources/app/storefront/build/live-reload-server/index.js
 src/Storefront/Resources/app/storefront/build/webpack/FilenameToChunkNamePlugin.js
 src/Storefront/Resources/app/storefront/tsconfig.json
+src/Storefront/Resources/app/storefront/scripts/runNpmAudit.ts
 src/Storefront/Resources/app/storefront/package-lock.json
 src/Storefront/Resources/app/storefront/patches/tiny-slider+2.9.4.patch
 src/Storefront/Resources/app/storefront/package.json
