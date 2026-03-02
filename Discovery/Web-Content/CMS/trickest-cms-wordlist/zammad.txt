@@ -1424,6 +1424,7 @@ db/migrate/20230406114415_rename_token_fields.rb
 db/migrate/20221108124934_issue4266_fix_field.rb
 db/migrate/20180518000001_issue2029_sipgate_integration_enable.rb
 db/migrate/20230825150332_issue_4657_time_accounting_selector.rb
+db/migrate/20260225155500_pr5952_fix_typos.rb
 db/migrate/20230523082822_two_factor_security_key_setup.rb
 db/migrate/20170123000002_fixed_translation.rb
 db/migrate/20180604000001_setting_add_ticket_auto_assignment2.rb
@@ -1445,12 +1446,14 @@ db/migrate/20230802112821_regex_operator_renaming.rb
 db/migrate/20180518100316_email_forward_prefix_setting_issue_1730.rb
 db/migrate/20180202000001_sidebar_customer_open_ticket_colored.rb
 db/migrate/20220411082942_issue1573_multi_orga.rb
+db/migrate/20260219141733_object_manager_attributes_no_blank_display_label.rb
 db/migrate/20170126091128_application_secret_setting.rb
 db/migrate/20171023000001_fixed_store_upgrade_ror_45.rb
 db/migrate/20230912080534_group_hierarchy.rb
 db/migrate/20220504133218_setting_updates3.rb
 db/migrate/20180220000002_setting_user_organization_selector_with_email.rb
 db/migrate/20210729183242_set_user_source_ldap_from_external_sync.rb
+db/migrate/20260219063427_object_manager_attributes_add_internal_flag.rb
 db/migrate/20180108000001_change_exchange_external_sync_identifier.rb
 db/migrate/20250501141812_issue5567_microsoft_graph_outbound_shared_mailbox.rb
 db/migrate/20250630120846_create_ai_agents.rb
@@ -4683,6 +4686,7 @@ spec/models/cti/caller_id_spec.rb
 spec/models/macro_spec.rb
 spec/models/store_spec.rb
 spec/models/checklist_spec.rb
+spec/models/form_updater/graphql/serializer_spec.rb
 spec/models/form_updater/updater/guided_setup/email_archive_spec.rb
 spec/models/form_updater/updater/user/create_spec.rb
 spec/models/form_updater/updater/user/notifications_spec.rb
@@ -4713,6 +4717,7 @@ spec/models/channel/driver/sms/massenversand_spec.rb
 spec/models/channel/driver/sms/twilio_spec.rb
 spec/models/channel/driver/facebook_spec.rb
 spec/models/channel/driver/microsoft_graph_outbound_spec.rb
+spec/models/channel/driver/using_bcc_examples.rb
 spec/models/channel/driver/imap_spec.rb
 spec/models/channel/filter/follow_up_assignment_spec.rb
 spec/models/channel/filter/match/contains_spec.rb
@@ -5537,6 +5542,7 @@ app/frontend/shared/form/features/__tests__/formUpdaterTrigger.spec.ts
 app/frontend/shared/form/features/__tests__/hideField.spec.ts
 app/frontend/shared/form/features/formUpdaterTrigger.ts
 app/frontend/shared/form/features/formLocaleDir.ts
+app/frontend/shared/form/features/addMissingEntityObjectOption.ts
 app/frontend/shared/form/features/addSubmitEvent.ts
 app/frontend/shared/form/features/defaultEmptyValueString.ts
 app/frontend/shared/form/features/translateWrapperProps.ts
@@ -5546,6 +5552,7 @@ app/frontend/shared/form/features/hideField.ts
 app/frontend/shared/form/features/addBlurEvent.ts
 app/frontend/shared/form/features/addLink.ts
 app/frontend/shared/form/useFormBlock.ts
+app/frontend/shared/form/utils/entity.ts
 app/frontend/shared/form/utils/extendSchemaDefinition.ts
 app/frontend/shared/form/plugins/__tests__/extendDataAttributes.spec.ts
 app/frontend/shared/form/plugins/__tests__/requiredValidation.spec.ts
@@ -5638,8 +5645,8 @@ app/frontend/shared/components/Form/fields/FieldToggle/initializeToggleClasses.t
 app/frontend/shared/components/Form/fields/FieldSelect/types.ts
 app/frontend/shared/components/Form/fields/FieldGroup/__tests__/FieldGroup.spec.ts
 app/frontend/shared/components/Form/fields/FieldGroup/index.ts
-app/frontend/shared/components/Form/fields/FieldSearch/FieldSearch.vue
 app/frontend/shared/components/Form/fields/FieldSearch/index.ts
+app/frontend/shared/components/Form/fields/FieldSearch/FieldSearchInput.vue
 app/frontend/shared/components/Form/fields/FieldButton/__tests__/FieldButton.spec.ts
 app/frontend/shared/components/Form/fields/FieldButton/index.ts
 app/frontend/shared/components/Form/fields/FieldButton/types.ts
@@ -5780,6 +5787,7 @@ app/frontend/shared/components/Form/utils.ts
 app/frontend/shared/components/Form/initializeFieldLinkClasses.ts
 app/frontend/shared/components/Form/initializeFieldEditor.ts
 app/frontend/shared/components/Form/composables/useValue.ts
+app/frontend/shared/components/Form/composables/useClearFormInput.ts
 app/frontend/shared/components/Form/composables/useFileUploadProcessing.ts
 app/frontend/shared/components/Form/FormFieldLink.vue
 app/frontend/shared/components/Form/FormGroup.vue
@@ -6119,6 +6127,8 @@ app/frontend/shared/entities/object-attributes/utils.ts
 app/frontend/shared/entities/object-attributes/composables/__tests__/useObjectAttributes.spec.ts
 app/frontend/shared/entities/object-attributes/composables/__tests__/useObjectAttributeFormData.spec.ts
 app/frontend/shared/entities/object-attributes/composables/__tests__/mocks/objectFrontendAttributes.json
+app/frontend/shared/entities/object-attributes/composables/__tests__/mocks/ticketObjectFrontendAttributes.json
+app/frontend/shared/entities/object-attributes/composables/__tests__/useObjectAttributeFormFields.spec.ts
 app/frontend/shared/entities/object-attributes/composables/useObjectAttributes.ts
 app/frontend/shared/entities/object-attributes/composables/useObjectAttributeLoadFormFields.ts
 app/frontend/shared/entities/object-attributes/composables/useObjectAttributeFormFields.ts
@@ -10714,6 +10724,9 @@ app/models/form_updater/relation/group.rb
 app/models/form_updater/relation/calendar.rb
 app/models/form_updater/relation/ticket_priority.rb
 app/models/form_updater/relation/ticket_state.rb
+app/models/form_updater/graphql/serializers/organization.rb
+app/models/form_updater/graphql/serializers/user.rb
+app/models/form_updater/graphql/serializer.rb
 app/models/form_updater/updater/guided_setup/email_outbound.rb
 app/models/form_updater/updater/guided_setup/email_archive.rb
 app/models/form_updater/updater/guided_setup/email_notification.rb
@@ -11659,6 +11672,7 @@ app/views/mailer/signup_taken_reset/es.html.erb
 app/views/mailer/signup_taken_reset/en.html.erb
 app/views/mailer/signup_taken_reset/pt-br.html.erb
 app/views/mailer/signup_taken_reset/id.html.erb
+app/views/mailer/signup_taken_reset/zh-tw.html.erb
 app/views/mailer/signup_taken_reset/de.html.erb
 app/views/mailer/ticket_escalation/cs.html.erb
 app/views/mailer/ticket_escalation/fr.html.erb

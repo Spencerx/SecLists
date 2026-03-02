@@ -1,8 +1,32 @@
+.changeset/frank-readers-leave.md
+.changeset/geometry-performance-fix.md
+.changeset/cool-rules-worry.md
+.changeset/soft-maps-watch.md
+.changeset/full-needles-grow.md
+.changeset/silly-readers-fetch.md
+.changeset/fix-filter-type-mismatch.md
+.changeset/fix-iptc-metadata-casing.md
+.changeset/dry-gifts-take.md
+.changeset/mighty-garlics-rush.md
+.changeset/spicy-pears-enjoy.md
+.changeset/big-turtles-clap.md
 .changeset/config.json
-.changeset/fix-graphql-groupby-collision.md
-.changeset/nine-views-sip.md
-.changeset/wet-ducks-stop.md
-.changeset/perky-lies-search.md
+.changeset/brave-rats-attend.md
+.changeset/tough-comics-nail.md
+.changeset/fix-password-reset-external-provider.md
+.changeset/kind-jeans-laugh.md
+.changeset/little-clowns-boil.md
+.changeset/swift-yellow-green.md
+.changeset/cold-pots-show.md
+.changeset/every-falcons-notice.md
+.changeset/ready-times-stop.md
+.changeset/bold-socks-move.md
+.changeset/floppy-ads-say.md
+.changeset/calm-ducks-thank.md
+.changeset/wild-showers-push.md
+.changeset/pretty-tools-design.md
+.changeset/loud-eyes-search.md
+.changeset/seven-kids-fry.md
 .vscode/settings.json
 .vscode/extensions.json
 .stylelintrc.json
@@ -38,10 +62,8 @@ tests/blackbox/tests/db/routes/permissions/cache-purge.test.ts
 tests/blackbox/tests/db/routes/files/storage.test.ts
 tests/blackbox/tests/db/routes/files/tus.test.ts
 tests/blackbox/tests/db/routes/items/version.test.ts
-tests/blackbox/tests/db/routes/items/field-selection.test.ts
 tests/blackbox/tests/db/routes/items/m2a.seed.ts
 tests/blackbox/tests/db/routes/items/seed-all-field-types.ts
-tests/blackbox/tests/db/routes/items/field-selection.seed.ts
 tests/blackbox/tests/db/routes/items/m2o.seed.ts
 tests/blackbox/tests/db/routes/items/hash-filter.seed.ts
 tests/blackbox/tests/db/routes/items/singleton.seed.ts
@@ -547,6 +569,7 @@ api/src/services/tus/index.ts
 api/src/services/tus/utils/wait-timeout.ts
 api/src/services/tus/server.test.ts
 api/src/services/tus/server.ts
+api/src/services/authentication.test.ts
 api/src/services/users.ts
 api/src/services/panels.ts
 api/src/services/access.ts
@@ -1775,6 +1798,7 @@ app/src/composables/use-item/lib/transform-m2a-aliases.ts
 app/src/composables/use-item/lib/get-graphql-query-fields.ts
 app/src/composables/use-item/index.ts
 app/src/composables/use-visual-editing.ts
+app/src/composables/use-schema.ts
 app/src/composables/use-event-listener.test.ts
 app/src/composables/use-permissions/item/lib/get-fields.test.ts
 app/src/composables/use-permissions/item/lib/is-action-allowed.test.ts
@@ -1798,6 +1822,7 @@ app/src/composables/use-permissions/collection/use-collection-permissions.ts
 app/src/composables/use-permissions/utils/is-field-allowed.ts
 app/src/composables/use-permissions/utils/is-field-allowed.test.ts
 app/src/composables/use-permissions/types/index.ts
+app/src/composables/use-mime-type-filter.ts
 app/src/composables/use-flows.test.ts
 app/src/composables/use-focusin.ts
 app/src/composables/use-clipboard.test.ts
@@ -1806,6 +1831,7 @@ app/src/composables/use-shortcut.ts
 app/src/composables/use-validation-error-details.ts
 app/src/composables/use-field-tree.ts
 app/src/composables/use-event-listener.ts
+app/src/composables/use-schema.test.ts
 app/src/composables/use-visual-editing.test.ts
 app/src/composables/use-navigation-guard.ts
 app/src/composables/use-relation-m2a.ts
@@ -1820,6 +1846,7 @@ app/src/composables/use-comparison-diff.test.ts
 app/src/composables/use-clipboard.ts
 app/src/composables/use-relation-permissions.ts
 app/src/composables/use-focus-trap-manager.ts
+app/src/composables/use-mime-type-filter.test.ts
 app/src/composables/use-fake-version-field.ts
 app/src/composables/use-auto-fit-text.ts
 app/src/composables/use-versions.ts
@@ -1967,6 +1994,7 @@ app/src/interfaces/index.test.ts
 app/src/interfaces/list-o2m/index.ts
 app/src/interfaces/list-o2m/preview.svg
 app/src/interfaces/list-o2m/list-o2m.vue
+app/src/interfaces/list-o2m/list-o2m.test.ts
 app/src/interfaces/select-icon/icons.json
 app/src/interfaces/select-icon/index.ts
 app/src/interfaces/select-icon/preview.svg
@@ -2208,6 +2236,7 @@ app/src/interfaces/input-rich-text-html/toolbar-default.ts
 app/src/interfaces/input-rich-text-html/get-editor-styles.ts
 app/src/interfaces/list-m2m/list-m2m.vue
 app/src/interfaces/list-m2m/index.ts
+app/src/interfaces/list-m2m/list-m2m.test.ts
 app/src/interfaces/list-m2m/preview.svg
 app/src/interfaces/list-m2a/index.ts
 app/src/interfaces/list-m2a/list-m2a.vue
@@ -2390,7 +2419,9 @@ app/src/components/v-form/composables/use-input-schema.ts
 app/src/components/v-form/utils/get-form-fields.ts
 app/src/components/v-form/utils/update-system-divider.test.ts
 app/src/components/v-form/utils/update-field-widths.ts
+app/src/components/v-form/utils/selective-clone.test.ts
 app/src/components/v-form/utils/update-system-divider.ts
+app/src/components/v-form/utils/selective-clone.ts
 app/src/components/v-form/utils/get-form-fields.test.ts
 app/src/components/v-form/utils/update-field-widths.test.ts
 app/src/components/v-form/components/validation-errors.test.ts
@@ -2568,6 +2599,7 @@ app/src/displays/icon/index.ts
 app/src/displays/icon/icon.test.ts
 app/src/displays/icon/__snapshots__/icon.test.ts.snap
 app/src/displays/icon/icon.vue
+app/src/displays/formatted-value/formatted-value.test.ts
 app/src/displays/formatted-value/index.ts
 app/src/displays/formatted-value/formatted-value.vue
 app/src/layouts/calendar/calendar.vue
@@ -2602,6 +2634,9 @@ app/src/layouts/tabular/options.vue
 app/src/layouts/tabular/index.ts
 app/src/layouts/tabular/actions.vue
 app/src/layouts/tabular/types.ts
+app/src/test-utils/index.ts
+app/src/test-utils/README.md
+app/src/test-utils/sdk.ts
 app/src/views/readme.md
 app/src/views/register.ts
 app/src/views/public/index.ts
@@ -2610,7 +2645,9 @@ app/src/views/public/logo-light.svg
 app/src/views/public/public-view.vue
 app/src/views/private/readme.md
 app/src/views/private/index.ts
+app/src/views/private/private-view/stores/sidebar.test.ts
 app/src/views/private/private-view/stores/sidebar.ts
+app/src/views/private/private-view/stores/nav-bar.test.ts
 app/src/views/private/private-view/stores/nav-bar.ts
 app/src/views/private/private-view/components/private-view-header-bar-icon.vue
 app/src/views/private/private-view/components/private-view-no-app-access.vue
@@ -2628,7 +2665,7 @@ app/src/views/private/private-view/components/private-view-header-bar.vue
 app/src/views/private/private-view/components/private-view-header-bar-actions.vue
 app/src/views/private/private-view/components/private-view.vue
 app/src/views/private/private-view/components/private-view-drawer.vue
-app/src/views/private/components/CollabAvatars.vue
+app/src/views/private/components/overlay-item.test.ts
 app/src/views/private/components/notification-item.vue
 app/src/views/private/components/FolderPickerListItem.vue
 app/src/views/private/components/layout-sidebar-detail.vue
@@ -2637,6 +2674,10 @@ app/src/views/private/components/archive-sidebar-detail.vue
 app/src/views/private/components/flow-sidebar-detail.vue
 app/src/views/private/components/search-input.vue
 app/src/views/private/components/basic-import-sidebar-detail.vue
+app/src/views/private/components/collab/utils.test.ts
+app/src/views/private/components/collab/utils.ts
+app/src/views/private/components/collab/CollabIndicatorHeader.vue
+app/src/views/private/components/collab/CollabIndicatorField.vue
 app/src/views/private/components/save-options.vue
 app/src/views/private/components/drawer-files.vue
 app/src/views/private/components/user-popover.vue
@@ -2666,6 +2707,7 @@ app/src/views/private/components/module-bar.vue
 app/src/views/private/components/bookmark-add.vue
 app/src/views/private/components/module-bar-logo.vue
 app/src/views/private/components/folder-picker.vue
+app/src/views/private/components/drawer-batch.test.ts
 app/src/views/private/components/render-template.vue
 app/src/views/private/components/notifications-group.vue
 app/src/views/private/components/shares-sidebar-detail.vue
@@ -2699,9 +2741,11 @@ app/src/ai/stores/use-ai-tools.ts
 app/src/ai/stores/use-ai-context.ts
 app/src/ai/stores/use-ai.test.ts
 app/src/ai/stores/use-ai-tools.test.ts
+app/src/ai/composables/use-ask-user-tool.test.ts
 app/src/ai/composables/use-prompts.test.ts
 app/src/ai/composables/use-context-staging.ts
 app/src/ai/composables/use-search-filter.ts
+app/src/ai/composables/use-ask-user-tool.ts
 app/src/ai/composables/use-visual-element-highlight.ts
 app/src/ai/composables/define-tool.ts
 app/src/ai/composables/use-prompts.ts
@@ -2715,6 +2759,7 @@ app/src/ai/components/ai-header.vue
 app/src/ai/components/ai-textarea.vue
 app/src/ai/components/ai-settings-menu.vue
 app/src/ai/components/ai-input-submit.vue
+app/src/ai/components/parts/ai-ask-user-summary.vue
 app/src/ai/components/parts/ai-tool-call-card.vue
 app/src/ai/components/parts/ai-message-tool.vue
 app/src/ai/components/parts/ai-message-source-url.vue
@@ -2722,6 +2767,7 @@ app/src/ai/components/parts/ai-message-source-document.vue
 app/src/ai/components/parts/ai-message-text.vue
 app/src/ai/components/parts/ai-message-reasoning.vue
 app/src/ai/components/parts/ai-message-file.vue
+app/src/ai/components/parts/ai-ask-user.vue
 app/src/ai/components/ai-conversation.vue
 app/src/ai/components/logos/claude.vue
 app/src/ai/components/logos/openai.vue

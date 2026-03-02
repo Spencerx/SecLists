@@ -426,6 +426,7 @@ extensions/tags/tests/integration/api/discussions/UpdateTest.php
 extensions/tags/tests/integration/api/discussions/ListTest.php
 extensions/tags/tests/integration/api/discussions/CreateTest.php
 extensions/tags/tests/integration/authorization/GlobalPolicyTest.php
+extensions/tags/tests/integration/authorization/DiscussionPolicyTest.php
 extensions/tags/tests/integration/authorization/TagPolicyTest.php
 extensions/tags/CHANGELOG.md
 extensions/tags/less/forum.less
@@ -1425,12 +1426,15 @@ framework/core/tests/unit/Foundation/ConfigTest.php
 framework/core/tests/unit/Locale/TranslatorTest.php
 framework/core/tests/unit/Install/BaseUrlTest.php
 framework/core/tests/unit/Install/Prerequisite/WritablePathsTest.php
+framework/core/tests/unit/Install/Steps/PublishAssetsTest.php
 framework/core/tests/unit/User/AvatarUploaderTest.php
 framework/core/tests/unit/User/AbstractPolicyTest.php
 framework/core/tests/unit/Settings/MemoryCacheSettingsRepositoryTest.php
 framework/core/tests/unit/Settings/DatabaseSettingsRepositoryTest.php
 framework/core/tests/unit/Http/CookieFactoryTest.php
 framework/core/tests/unit/Http/RouteCollectionTest.php
+framework/core/tests/unit/Mail/MailerTest.php
+framework/core/tests/unit/Notification/NotificationMailerTest.php
 framework/core/tests/unit/.gitkeep
 framework/core/tests/unit/Queue/DatabaseWorkerArgsTest.php
 framework/core/tests/phpunit.integration.xml
@@ -1637,6 +1641,7 @@ framework/core/src/Foundation/ContainerUtil.php
 framework/core/src/Foundation/InstalledSite.php
 framework/core/src/Foundation/Config.php
 framework/core/src/Foundation/Event/ClearingCache.php
+framework/core/src/Foundation/Event/ApplicationBooted.php
 framework/core/src/Foundation/HighMaintenanceModeHandler.php
 framework/core/src/Foundation/IOException.php
 framework/core/src/Foundation/MaintenanceMode.php
@@ -2015,6 +2020,7 @@ framework/core/src/Mail/SmtpDriver.php
 framework/core/src/Mail/Job/SendInformationalEmailJob.php
 framework/core/src/Mail/MutateEmail.php
 framework/core/src/Mail/ValidatesMailSettings.php
+framework/core/src/Mail/Event/EmailSendFailed.php
 framework/core/src/Mail/MailgunDriver.php
 framework/core/src/Mail/Mailer.php
 framework/core/src/Mail/MailServiceProvider.php
@@ -2288,6 +2294,7 @@ framework/core/js/tests/unit/common/helpers/listItems.test.ts
 framework/core/js/tests/integration/common/AlertManager.test.ts
 framework/core/js/tests/integration/common/GambitManager.test.ts
 framework/core/js/tests/integration/common/ModalManager.test.ts
+framework/core/js/tests/integration/common/components/SearchModal.test.ts
 framework/core/js/tests/integration/common/components/SplitDropdown.test.ts
 framework/core/js/tests/integration/common/components/Button.test.ts
 framework/core/js/tests/integration/common/components/Dropdown.test.ts
@@ -2320,6 +2327,7 @@ framework/core/js/tests/integration/admin/components/AdvancedPage.test.ts
 framework/core/js/tests/integration/admin/components/MailPage.test.ts
 framework/core/js/tests/integration/admin/components/BasicsPage.test.ts
 framework/core/js/tests/integration/admin/components/UserListPage.test.ts
+framework/core/js/tests/integration/admin/components/GeneralSearchSource.test.ts
 framework/core/js/tests/integration/admin/components/Modals.test.ts
 framework/core/js/tests/integration/forum/components/PostStream.test.ts
 framework/core/js/tests/integration/forum/components/IndexPage.test.ts
@@ -2511,6 +2519,7 @@ framework/core/js/dist-typings/admin/components/FormSection.d.ts
 framework/core/js/dist-typings/admin/components/ExtensionPage.d.ts
 framework/core/js/dist-typings/admin/components/LoadingModal.d.ts
 framework/core/js/dist-typings/admin/components/ExtensionPermissionGrid.d.ts
+framework/core/js/dist-typings/admin/components/FontAwesomePreviewModal.d.ts
 framework/core/js/dist-typings/admin/components/EditCustomFooterModal.d.ts
 framework/core/js/dist-typings/admin/components/HeaderPrimary.d.ts
 framework/core/js/dist-typings/admin/components/AdminHeader.d.ts
@@ -2633,6 +2642,8 @@ framework/core/js/dist/common/components/EditUserModal.js.map
 framework/core/js/dist/common/components/EditUserModal.js
 framework/core/js/dist/common/components/SearchModal.js.map
 framework/core/js/dist/common/components/SearchModal.js
+framework/core/js/dist/admin/components/FontAwesomePreviewModal.js
+framework/core/js/dist/admin/components/FontAwesomePreviewModal.js.map
 framework/core/js/dist/forum.js
 framework/core/js/dist/admin.js.LICENSE.txt
 framework/core/js/dist/forum/components/PostStream.js
@@ -2836,6 +2847,7 @@ framework/core/js/src/admin/components/ReadmeModal.tsx
 framework/core/js/src/admin/components/ExtensionBisect.tsx
 framework/core/js/src/admin/components/EditCustomCssModal.tsx
 framework/core/js/src/admin/components/BasicsPage.tsx
+framework/core/js/src/admin/components/FontAwesomePreviewModal.tsx
 framework/core/js/src/admin/components/ExtensionLinkButton.js
 framework/core/js/src/admin/components/StatusWidget.js
 framework/core/js/src/admin/components/FormSectionGroup.tsx
