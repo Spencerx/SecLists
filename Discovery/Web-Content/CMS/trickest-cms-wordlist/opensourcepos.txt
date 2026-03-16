@@ -1,13 +1,16 @@
 INSTALL.md
 tests/.htaccess
 tests/Models/Reports/Summary_discounts_test.php
+tests/Models/Item_test.php
 tests/Models/EmployeeTest.php
+tests/Libraries/Token_libTest.php
 tests/README.md
 tests/Controllers/HomeTest.php
 tests/Controllers/EmployeesControllerTest.php
 tests/Controllers/ReportsControllerTest.php
 tests/Controllers/ItemsCsvImportTest.php
 tests/helpers/UrlHelperTest.php
+tests/Config/AppTest.php
 tests/phpunit.xml
 writable/cache/.htaccess
 writable/cache/index.html
@@ -24,6 +27,7 @@ UPGRADE.md
 CODE_OF_CONDUCT.md
 docker-compose.dev.yml
 .htaccess
+Dockerfile.test
 design/ospos_categories.mwb
 design/databaselayout.mwb
 design/ospos_categories.mwb.bak
@@ -93,6 +97,10 @@ branding/mark-white.svg
 branding/mark.svg
 build.ps1
 spark
+build/.phpunit.cache/test-results
+build/logs/testdox.txt
+build/logs/logfile.xml
+build/logs/testdox.html
 build-package.ps1
 Dockerfile
 .env.example
@@ -1424,6 +1432,7 @@ app/Views/partial/tax_categories.php
 app/Views/partial/tax_jurisdictions.php
 app/Views/partial/header.php
 app/Views/partial/dinner_tables.php
+app/Views/partial/table_filter_persistence.php
 app/Views/partial/visibility_js.php
 app/Views/suppliers/form.php
 app/Views/configs/system_config.php
