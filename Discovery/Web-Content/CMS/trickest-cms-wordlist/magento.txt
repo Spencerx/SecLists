@@ -8174,6 +8174,7 @@ dev/tests/integration/testsuite/Magento/Csp/Model/CompositePolicyCollectorTest.p
 dev/tests/integration/testsuite/Magento/Csp/Model/SriStandardStrategyDeploymentTest.php
 dev/tests/integration/testsuite/Magento/Csp/Model/SriThemeDeploymentTest.php
 dev/tests/integration/testsuite/Magento/Csp/Model/SriHashIsolationTest.php
+dev/tests/integration/testsuite/Magento/Csp/Model/SriCustomModuleJsIntegrityTest.php
 dev/tests/integration/testsuite/Magento/Csp/Model/SriQuickStrategyDeploymentTest.php
 dev/tests/integration/testsuite/Magento/Csp/Model/Policy/Renderer/SimplePolicyHeaderRendererTest.php
 dev/tests/integration/testsuite/Magento/Csp/Model/Mode/ConfigManagerTest.php
@@ -8192,6 +8193,7 @@ dev/tests/integration/testsuite/Magento/Csp/Model/SubresourceIntegrity/SriMinifi
 dev/tests/integration/testsuite/Magento/Csp/Model/SriCompactStrategyDeploymentTest.php
 dev/tests/integration/testsuite/Magento/Csp/CspAwareActionTest.php
 dev/tests/integration/testsuite/Magento/Csp/Plugin/RepositionSriBeforeRequireJsConfigTest.php
+dev/tests/integration/testsuite/Magento/Csp/Plugin/SriHeadRendererIntegrationTest.php
 dev/tests/integration/testsuite/Magento/Csp/Plugin/GenerateMergedAssetIntegrityTest.php
 dev/tests/integration/testsuite/Magento/Csp/Plugin/RemoveAllAssetIntegrityHashesTest.php
 dev/tests/integration/testsuite/Magento/Csp/Plugin/GenerateBundleAssetIntegrityTest.php
@@ -8199,6 +8201,9 @@ dev/tests/integration/testsuite/Magento/Csp/Plugin/AddDefaultPropertiesToGroupPl
 dev/tests/integration/testsuite/Magento/Csp/Plugin/PrependSriHashesToHeadAssetsTest.php
 dev/tests/integration/testsuite/Magento/Csp/Helper/CspNonceProviderMock.php
 dev/tests/integration/testsuite/Magento/Csp/Helper/InlineUtilTest.php
+dev/tests/integration/testsuite/Magento/Csp/_modules/SriTestModule/registration.php
+dev/tests/integration/testsuite/Magento/Csp/_modules/SriTestModule/etc/module.xml
+dev/tests/integration/testsuite/Magento/Csp/_modules/SriTestModule/view/base/web/js/sri-test-widget.js
 dev/tests/integration/testsuite/Magento/Csp/CspTest.php
 dev/tests/integration/testsuite/Magento/Csp/CachedBlockTest.php
 dev/tests/integration/testsuite/Magento/CatalogSearch/Model/Search/RequestGeneratorTest.php
@@ -8409,6 +8414,7 @@ dev/tests/integration/testsuite/Magento/Checkout/Model/SessionTest.php
 dev/tests/integration/testsuite/Magento/Checkout/Model/CaptchaRateLimiterTest.php
 dev/tests/integration/testsuite/Magento/Checkout/Model/DownloadableProductPurchaseTest.php
 dev/tests/integration/testsuite/Magento/Checkout/Model/ShippingAddressWithoutCompanyTest.php
+dev/tests/integration/testsuite/Magento/Checkout/Model/PaymentInformationManagementTest.php
 dev/tests/integration/testsuite/Magento/Checkout/Model/ShippingInformationManagementTest.php
 dev/tests/integration/testsuite/Magento/Checkout/_files/quote_with_address_saved.php
 dev/tests/integration/testsuite/Magento/Checkout/_files/quote_with_bundle_product_rollback.php
@@ -17949,6 +17955,7 @@ app/code/Magento/Quote/Test/Unit/Model/Product/Plugin/UpdateQuoteItemsTest.php
 app/code/Magento/Quote/Test/Unit/Model/Backpressure/WebapiRequestTypeExtractorTest.php
 app/code/Magento/Quote/Test/Unit/Model/Backpressure/OrderLimitConfigManagerTest.php
 app/code/Magento/Quote/Test/Unit/Model/Webapi/ParamOverriderCartIdTest.php
+app/code/Magento/Quote/Test/Unit/Model/QuoteAddressValidatorTest.php
 app/code/Magento/Quote/Test/Unit/Model/Quote/ShippingAssignment/ShippingProcessorTest.php
 app/code/Magento/Quote/Test/Unit/Model/Quote/ShippingAssignment/ShippingAssignmentProcessorTest.php
 app/code/Magento/Quote/Test/Unit/Model/Quote/Item/ToOrderItemTest.php
@@ -23252,6 +23259,7 @@ app/code/Magento/AwsS3/Test/Mftf/Suite/RemoteStorageAwsS3EnabledSuite.xml
 app/code/Magento/AwsS3/Test/Mftf/test-dependency-allowlist
 app/code/Magento/AwsS3/Test/Mftf/test-dependency-errors-detailed
 app/code/Magento/AwsS3/Test/Unit/Driver/AwsS3FactoryTest.php
+app/code/Magento/AwsS3/Test/Unit/Driver/AwsS3FactoryObjectUrlTest.php
 app/code/Magento/AwsS3/Test/Unit/Driver/CredentialsCacheTest.php
 app/code/Magento/AwsS3/Test/Unit/Driver/AwsS3Test.php
 app/code/Magento/AwsS3/registration.php
@@ -35840,6 +35848,7 @@ app/code/Magento/Sales/Setup/SalesOrderPaymentDataConverter.php
 app/code/Magento/Sales/Setup/SalesSetup.php
 app/code/Magento/Sales/Setup/Patch/Data/FillQuoteAddressIdInSalesOrderAddress.php
 app/code/Magento/Sales/Setup/Patch/Data/ConvertSerializedDataToJson.php
+app/code/Magento/Sales/Setup/Patch/Data/PopulatePeriodMonthColumn.php
 app/code/Magento/Sales/Setup/Patch/Data/WishlistDataCleanUp.php
 app/code/Magento/Sales/Setup/Patch/Data/UpdateEntityTypes.php
 app/code/Magento/Sales/Setup/Patch/Data/UpdateEntityTypeModelForInvoice.php
