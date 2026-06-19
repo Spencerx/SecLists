@@ -513,9 +513,11 @@ application/Espo/Core/Authentication/Oidc/TokenValidator.php
 application/Espo/Core/Authentication/Oidc/Logout.php
 application/Espo/Core/Authentication/Oidc/UserProvider/Sync.php
 application/Espo/Core/Authentication/Oidc/UserProvider/UserInfo.php
+application/Espo/Core/Authentication/Oidc/UserProvider/UserInfoPopulator.php
 application/Espo/Core/Authentication/Oidc/UserProvider/UsernameValidator.php
 application/Espo/Core/Authentication/Oidc/UserProvider/DefaultUserProvider.php
 application/Espo/Core/Authentication/Oidc/UserProvider/UserRepository.php
+application/Espo/Core/Authentication/Oidc/UserProvider/DefaultUserInfoPopulator.php
 application/Espo/Core/Authentication/Hook/Manager.php
 application/Espo/Core/Authentication/Hook/Hooks/UsernameFailedAttemptsLimit.php
 application/Espo/Core/Authentication/Hook/Hooks/IpAddressWhitelist.php
@@ -3495,9 +3497,11 @@ application/Espo/Classes/Cleanup/Reminders.php
 application/Espo/Classes/Cleanup/PasswordChangeRequests.php
 application/Espo/Classes/Cleanup/AppLog.php
 application/Espo/Classes/Cleanup/TwoFactorCodes.php
+application/Espo/Classes/AppInfo/CoreVersion.php
 application/Espo/Classes/AppInfo/Jobs.php
 application/Espo/Classes/AppInfo/Container.php
 application/Espo/Classes/AppInfo/Binding.php
+application/Espo/Classes/AppInfo/Version.php
 application/Espo/Classes/ConsoleCommands/PopulateNumbers.php
 application/Espo/Classes/ConsoleCommands/CheckFilePermissions.php
 application/Espo/Classes/ConsoleCommands/SetConfigParam.php
@@ -3699,6 +3703,7 @@ application/Espo/Classes/MassAction/User/MassUpdate.php
 application/Espo/Classes/MassAction/Email/MoveToFolder.php
 application/Espo/Classes/FieldProcessing/Portal/UrlLoader.php
 application/Espo/Classes/FieldProcessing/Import/CountsLoader.php
+application/Espo/Classes/FieldProcessing/WorkingTimeCalendar/IsDefaultLoader.php
 application/Espo/Classes/FieldProcessing/InboundEmail/IsSystemLoader.php
 application/Espo/Classes/FieldProcessing/User/LastAccessLoader.php
 application/Espo/Classes/FieldProcessing/LeadCapture/ExampleLoader.php
@@ -6697,6 +6702,7 @@ application/Espo/Tools/OpenApi/FieldSchemaBuilders/CurrencyType.php
 application/Espo/Tools/OpenApi/FieldSchemaBuilders/TextType.php
 application/Espo/Tools/OpenApi/FieldSchemaBuilders/AutoincrementType.php
 application/Espo/Tools/Installer/DatabaseConfigDataProvider.php
+application/Espo/Tools/ConsoleAppInfo/InfoProvider.php
 application/Espo/Tools/PopupNotification/Service.php
 application/Espo/Tools/PopupNotification/Item.php
 application/Espo/Tools/PopupNotification/Provider.php
@@ -6810,6 +6816,7 @@ application/Espo/Tools/Export/ProcessorParamsHandler.php
 application/Espo/Tools/Export/Params.php
 application/Espo/Tools/Export/Export.php
 application/Espo/Tools/Export/Processor/Params.php
+application/Espo/Tools/Export/Processor/Util.php
 application/Espo/Tools/Export/AdditionalFieldsLoaderFactory.php
 application/Espo/Tools/Export/ProcessorFactory.php
 application/Espo/Tools/Export/AdditionalFieldsLoader.php
@@ -6899,6 +6906,7 @@ application/Espo/Tools/EmailNotification/HookProcessor.php
 application/Espo/Tools/EmailNotification/Jobs/NotifyAboutAssignment.php
 application/Espo/Tools/EmailNotification/AssignmentProcessor.php
 application/Espo/Tools/EmailNotification/AssignmentProcessorData.php
+application/Espo/Tools/Object/MetadataProvider.php
 application/Espo/Tools/Lock/LockService.php
 application/Espo/Tools/Lock/LockMetadataProvider.php
 application/Espo/Tools/Lock/LockValidationHelper.php
@@ -7601,7 +7609,9 @@ clear_cache.php
 bin/command
 tests/integration/Core/DataLoader.php
 tests/integration/Core/Utils.php
+tests/integration/Core/Registry.php
 tests/integration/Core/Tester.php
+tests/integration/Core/NoTransaction.php
 tests/integration/Core/BaseTestCase.php
 tests/integration/Core/ApiClient.php
 tests/integration/testClasses/Job/Job.php
@@ -7618,7 +7628,6 @@ tests/integration/testData/Core/FulltextIndex/customFiles/custom/Espo/Custom/Res
 tests/integration/testData/Core/FulltextIndex/customFiles/custom/Espo/Custom/Resources/metadata/entityDefs/Email.json
 tests/integration/testData/Core/FulltextIndex/customFiles/custom/Espo/Custom/Resources/metadata/entityDefs/Contact.json
 tests/integration/testData/Account/ChangeFields.php
-tests/integration/testData/User/Login.php
 tests/integration/testData/InitData.php
 tests/integration/testData/Extension/General.zip
 tests/integration/testData/Upgrade/General.zip
@@ -7628,6 +7637,7 @@ tests/integration/Espo/Core/Field/ValueObjectTest.php
 tests/integration/Espo/Core/Formula/FormulaTest.php
 tests/integration/Espo/Core/Authentication/FailedLoginAttemptsTest.php
 tests/integration/Espo/Core/Authentication/AuthToken/AuthTokenManagerTest.php
+tests/integration/Espo/Core/Authentication/Oidc/UserInfoPopulatorTest.php
 tests/integration/Espo/Core/Mail/ParentFinderTest.php
 tests/integration/Espo/Core/Job/JobTest.php
 tests/integration/Espo/Core/FulltextIndex/CheckCreatedIndexTest.php
@@ -7697,6 +7707,7 @@ tests/integration/Espo/Tools/DynamicLogic/CascadingFieldsTest.php
 tests/integration/Espo/Tools/Activities/ComposeEmailAddressListTest.php
 tests/integration/Espo/Tools/Merge/MergeTest.php
 tests/integration/Espo/Tools/AppSecret/SecretProviderTest.php
+tests/integration/Espo/Tools/Object/MetadataProviderTest.php
 tests/integration/Espo/Tools/Lock/LockTest.php
 tests/integration/Espo/Tools/App/LanguageTest.php
 tests/integration/Espo/Tools/App/MetadataTest.php
@@ -9356,7 +9367,6 @@ client/res/templates/admin/layouts/record/edit-attributes.tpl
 client/res/templates/admin/layouts/grid.tpl
 client/res/templates/admin/layouts/index.tpl
 client/res/templates/admin/layouts/rows.tpl
-client/res/templates/admin/layouts/grid-panel.tpl
 client/res/templates/admin/integrations/edit.tpl
 client/res/templates/admin/integrations/index.tpl
 client/res/templates/admin/integrations/oauth2.tpl

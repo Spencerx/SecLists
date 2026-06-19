@@ -360,30 +360,36 @@ test/data/vcr_cassettes/lib/microsoft_graph/microsoftgraph_send_mail_sends_an_em
 test/data/vcr_cassettes/lib/microsoft_graph/microsoftgraph_get_message_folders_tree_returns_tree_structure_of_a_folder.yml
 test/data/vcr_cassettes/lib/microsoft_graph/microsoftgraph_message_lifecycle_tests_message_lifecycle.yml
 test/data/vcr_cassettes/lib/microsoft_graph/microsoftgraph_folder_lifecycle_tests_folder_lifecycle.yml
-test/data/vcr_cassettes/lib/ai/provider/mistral/ai_provider_mistral_when_specifying_a_model_with_an_invalid_model_raises_an_error.yml
-test/data/vcr_cassettes/lib/ai/provider/mistral/ai_provider_mistral_when_specifying_a_model_with_a_valid_model_with_a_model_that_does_not_support_temperature_raises_an_error_for_invalid_model.yml
-test/data/vcr_cassettes/lib/ai/provider/mistral/ai_provider_mistral_when_specifying_a_model_with_a_valid_model_does_exchange_data_with_mistral_endpoint.yml
-test/data/vcr_cassettes/lib/ai/provider/mistral/ai_provider_mistral_when_specifying_a_model_without_a_model_does_exchange_data_with_mistral_endpoint.yml
-test/data/vcr_cassettes/lib/ai/provider/mistral/ai_provider_mistral_when_metadata_is_extracted_stores_metadata_from_response.yml
-test/data/vcr_cassettes/lib/ai/provider/azure/ai_provider_azure_does_exchange_data_with_azure_ai_endpoint.yml
-test/data/vcr_cassettes/lib/ai/provider/azure/ai_provider_azure_when_metadata_is_extracted_stores_metadata_from_response.yml
-test/data/vcr_cassettes/lib/ai/provider/anthropic/ai_provider_anthropic_when_specifying_a_model_without_a_model_does_exchange_data_with_anthropic_endpoint.yml
-test/data/vcr_cassettes/lib/ai/provider/anthropic/ai_provider_anthropic_when_specifying_a_model_with_an_invalid_model_raises_an_error.yml
-test/data/vcr_cassettes/lib/ai/provider/anthropic/ai_provider_anthropic_when_metadata_is_extracted_stores_metadata_from_response.yml
-test/data/vcr_cassettes/lib/ai/provider/anthropic/ai_provider_anthropic_when_specifying_a_model_with_a_valid_model_does_exchange_data_with_anthropic_endpoint.yml
-test/data/vcr_cassettes/lib/ai/provider/open_ai/ai_provider_openai_when_specifying_a_model_with_an_invalid_model_raises_an_error.yml
-test/data/vcr_cassettes/lib/ai/provider/open_ai/ai_provider_openai_when_specifying_a_model_with_a_valid_model_with_model_temperature_support_flag_set_to_false_does_exchange_data_with_open_ai_endpoint_without_temperature.yml
-test/data/vcr_cassettes/lib/ai/provider/open_ai/ai_provider_openai_when_metadata_is_extracted_stores_metadata_from_response.yml
-test/data/vcr_cassettes/lib/ai/provider/open_ai/ai_provider_openai_when_specifying_a_model_with_a_valid_model_with_a_model_that_does_not_support_temperature_does_exchange_data_with_open_ai_endpoint.yml
-test/data/vcr_cassettes/lib/ai/provider/open_ai/ai_provider_openai_when_specifying_a_model_without_a_model_does_exchange_data_with_open_ai_endpoint.yml
-test/data/vcr_cassettes/lib/ai/provider/open_ai/ai_provider_openai_when_specifying_a_model_with_a_valid_model_does_exchange_data_with_open_ai_endpoint.yml
-test/data/vcr_cassettes/lib/ai/provider/zammad_ai/ai_provider_zammadai_does_exchange_data_with_zammadai_endpoint.yml
-test/data/vcr_cassettes/lib/ai/provider/zammad_ai/ai_provider_zammadai_when_metadata_is_extracted_stores_metadata_from_response.yml
+test/data/vcr_cassettes/lib/ai/provider/mistral/ai_provider_mistral_ask_when_specifying_a_model_with_a_valid_model_with_a_model_that_does_not_support_temperature_raises_an_error_for_invalid_model.yml
+test/data/vcr_cassettes/lib/ai/provider/mistral/ai_provider_mistral_ask_when_specifying_a_model_with_an_invalid_model_raises_an_error.yml
+test/data/vcr_cassettes/lib/ai/provider/mistral/ai_provider_mistral_ask_when_metadata_is_extracted_stores_metadata_from_response.yml
+test/data/vcr_cassettes/lib/ai/provider/mistral/ai_provider_mistral_ask_when_specifying_a_model_without_a_model_does_exchange_data_with_mistral_endpoint.yml
+test/data/vcr_cassettes/lib/ai/provider/mistral/ai_provider_mistral_ask_when_specifying_a_model_with_a_valid_model_does_exchange_data_with_mistral_endpoint.yml
+test/data/vcr_cassettes/lib/ai/provider/azure/ai_provider_azure_ask_does_exchange_data_with_azure_ai_endpoint.yml
+test/data/vcr_cassettes/lib/ai/provider/azure/ai_provider_azure_ask_when_metadata_is_extracted_stores_metadata_from_response.yml
+test/data/vcr_cassettes/lib/ai/provider/anthropic/ai_provider_anthropic_ask_when_specifying_a_model_without_a_model_does_exchange_data_with_anthropic_endpoint.yml
+test/data/vcr_cassettes/lib/ai/provider/anthropic/ai_provider_anthropic_ask_when_metadata_is_extracted_stores_metadata_from_response.yml
+test/data/vcr_cassettes/lib/ai/provider/anthropic/ai_provider_anthropic_ask_when_specifying_a_model_with_a_valid_model_does_exchange_data_with_anthropic_endpoint.yml
+test/data/vcr_cassettes/lib/ai/provider/anthropic/ai_provider_anthropic_ask_when_specifying_a_model_with_an_invalid_model_raises_an_error.yml
+test/data/vcr_cassettes/lib/ai/provider/open_ai/ai_provider_openai_ask_when_specifying_a_model_with_a_valid_model_does_exchange_data_with_open_ai_endpoint.yml
+test/data/vcr_cassettes/lib/ai/provider/open_ai/ai_provider_openai_ask_when_specifying_a_model_without_a_model_does_exchange_data_with_open_ai_endpoint.yml
+test/data/vcr_cassettes/lib/ai/provider/open_ai/ai_provider_openai_ask_when_metadata_is_extracted_stores_metadata_from_response.yml
+test/data/vcr_cassettes/lib/ai/provider/open_ai/ai_provider_openai_ask_when_specifying_a_model_with_an_invalid_model_raises_an_error.yml
+test/data/vcr_cassettes/lib/ai/provider/open_ai/ai_provider_openai_ask_when_specifying_a_model_with_a_valid_model_with_model_temperature_support_flag_set_to_false_does_exchange_data_with_open_ai_endpoint_without_temperature.yml
+test/data/vcr_cassettes/lib/ai/provider/open_ai/ai_provider_openai_ask_when_specifying_a_model_with_a_valid_model_with_a_model_that_does_not_support_temperature_does_exchange_data_with_open_ai_endpoint.yml
+test/data/vcr_cassettes/lib/ai/provider/zammad_ai/ai_provider_zammadai_ask_does_exchange_data_with_zammadai_endpoint.yml
+test/data/vcr_cassettes/lib/ai/provider/zammad_ai/ai_provider_zammadai_ask_when_metadata_is_extracted_stores_metadata_from_response.yml
 test/data/vcr_cassettes/lib/ai/provider/shared_examples/ping_rb/ai_provider_azure_ping_does_not_raise_and_does_not_write_to_the_log.yml
 test/data/vcr_cassettes/lib/ai/provider/shared_examples/ping_rb/ai_provider_openai_ping_does_not_raise_and_does_not_write_to_the_log.yml
 test/data/vcr_cassettes/lib/ai/provider/shared_examples/ping_rb/ai_provider_anthropic_ping_does_not_raise_and_does_not_write_to_the_log.yml
 test/data/vcr_cassettes/lib/ai/provider/shared_examples/ping_rb/ai_provider_zammadai_ping_does_not_raise_and_does_not_write_to_the_log.yml
 test/data/vcr_cassettes/lib/ai/provider/shared_examples/ping_rb/ai_provider_mistral_ping_does_not_raise_and_does_not_write_to_the_log.yml
+test/data/vcr_cassettes/lib/ai/provider/shared_examples/embed_rb/ai_provider_openai_embed_when_embeddings_are_requested_returns_embeddings.yml
+test/data/vcr_cassettes/lib/ai/provider/shared_examples/embed_rb/ai_provider_mistral_bulk_embed_when_embeddings_are_requested_returns_embeddings.yml
+test/data/vcr_cassettes/lib/ai/provider/shared_examples/embed_rb/ai_provider_zammadai_bulk_embed_when_embeddings_are_requested_returns_embeddings.yml
+test/data/vcr_cassettes/lib/ai/provider/shared_examples/embed_rb/ai_provider_mistral_embed_when_embeddings_are_requested_returns_embeddings.yml
+test/data/vcr_cassettes/lib/ai/provider/shared_examples/embed_rb/ai_provider_openai_bulk_embed_when_embeddings_are_requested_returns_embeddings.yml
+test/data/vcr_cassettes/lib/ai/provider/shared_examples/embed_rb/ai_provider_zammadai_embed_when_embeddings_are_requested_returns_embeddings.yml
 test/data/vcr_cassettes/lib/ai/service/text_tool/ai_service_texttool_when_service_is_executed_with_zammadai_as_provider_check_that_grammar_is_correct.yml
 test/data/vcr_cassettes/lib/ai/service/text_tool/ai_service_texttool_when_service_is_executed_with_openai_as_provider_check_that_grammar_is_correct.yml
 test/data/vcr_cassettes/lib/ai/service/text_tool/result/ai_text_tool_result_verification_with_zammad_ai_provider_when_expand_draft_into_well-written_section_is_used_with_input006_json_detects_expected_language_and_html_markup.yml
@@ -583,6 +589,7 @@ browserlist
 .dev/rubocop/cop/zammad/concerns/can_check_gql_operation.rb
 .dev/rubocop/cop/zammad/trigger_from_commit_hooks.rb
 .dev/rubocop/cop/zammad/to_forbid_over_not_to_permit.rb
+.dev/rubocop/cop/zammad/forbid_unprocessable_entity.rb
 .dev/rubocop/cop/zammad/prefer_models_all.rb
 .dev/rubocop/cop/zammad/forbid_loofah_fragment.rb
 .dev/rubocop/cop/zammad/forbid_translatable_marker.rb
@@ -642,6 +649,7 @@ browserlist
 .devcontainer/with-mailserver/certs/.gitkeep
 .devcontainer/with-mailserver/compose.yaml
 .devcontainer/with-mailserver/devcontainer-lock.json
+.devcontainer/with-selenium/scripts/post_create.sh
 .devcontainer/with-selenium/devcontainer.json
 .devcontainer/with-selenium/compose.yaml
 .devcontainer/with-selenium/devcontainer-lock.json
@@ -1393,6 +1401,7 @@ lib/text/quote_remover/attribution_pattern/wrote.rb
 lib/text/quote_remover/attribution_pattern/outlook_delimiter.rb
 lib/text/quote_remover/attribution_pattern/posted_by.rb
 lib/text/quote_remover/signature.rb
+lib/text/content_cleanup.rb
 lib/text/quote_remover.rb
 lib/upload_cache.rb
 lib/certificate/x509.rb
@@ -2950,6 +2959,7 @@ app/graphql/gql/types/ticket/priority_type.rb
 app/graphql/gql/types/ticket/article_type.rb
 app/graphql/gql/types/ticket/time_accounting/type_type.rb
 app/graphql/gql/types/ticket/state_type.rb
+app/graphql/gql/types/ticket/external_references/issue_tracker_item/issue_type_type.rb
 app/graphql/gql/types/ticket/external_references/issue_tracker_item/label_type.rb
 app/graphql/gql/types/ticket/external_references/idoit_object_type.rb
 app/graphql/gql/types/ticket/external_references/issue_tracker_item_type.rb
@@ -3056,6 +3066,7 @@ app/controllers/integration/idoit_controller.rb
 app/controllers/integration/placetel_controller.rb
 app/controllers/integration/exchange_controller.rb
 app/controllers/integration/ldap_controller.rb
+app/controllers/integration/issue_tracker_controller.rb
 app/controllers/application_controller/has_user.rb
 app/controllers/application_controller/authorizes.rb
 app/controllers/application_controller/prevents_csrf.rb
@@ -4553,6 +4564,7 @@ app/services/service/check_feature_enabled.rb
 app/services/service/translation/search.rb
 app/services/service/translation/search/collector.rb
 app/services/service/translation/search/collector/priority.rb
+app/services/service/translation/search/collector/public_link.rb
 app/services/service/translation/search/collector/overview.rb
 app/services/service/translation/search/collector/model.rb
 app/services/service/translation/search/collector/object_manager_attributes.rb
@@ -4628,6 +4640,9 @@ app/services/service/ai/agent/run/context/instruction.rb
 app/services/service/ai/agent/run/context.rb
 app/services/service/ai/agent/run/perform/agent.rb
 app/services/service/ai/vectordb/reload.rb
+app/services/service/ai/vectordb/content/chunks/strategy/base.rb
+app/services/service/ai/vectordb/content/chunks/strategy/sentence.rb
+app/services/service/ai/vectordb/content/chunks.rb
 app/services/service/ai/vectordb/base.rb
 app/services/service/ai/vectordb/create_table.rb
 app/services/service/ai/vectordb/similarity_search.rb
@@ -5069,6 +5084,7 @@ app/views/mailer/password_reset/de.html.erb
 app/views/mailer/password_reset/lt.html.erb
 app/views/mailer/password_reset/en.html.erb
 app/views/mailer/password_reset/uk.html.erb
+app/views/mailer/password_reset/da.html.erb
 app/views/mailer/password_reset/id.html.erb
 app/views/mailer/password_reset/sr.html.erb
 app/views/mailer/password_reset/nl.html.erb
@@ -5313,6 +5329,7 @@ app/views/mailer/signup_taken_reset/de.html.erb
 app/views/mailer/signup_taken_reset/lt.html.erb
 app/views/mailer/signup_taken_reset/en.html.erb
 app/views/mailer/signup_taken_reset/uk.html.erb
+app/views/mailer/signup_taken_reset/da.html.erb
 app/views/mailer/signup_taken_reset/id.html.erb
 app/views/mailer/signup_taken_reset/sr.html.erb
 app/views/mailer/signup_taken_reset/nl.html.erb
@@ -5338,6 +5355,7 @@ app/views/mailer/ticket_create/de.html.erb
 app/views/mailer/ticket_create/lt.html.erb
 app/views/mailer/ticket_create/en.html.erb
 app/views/mailer/ticket_create/uk.html.erb
+app/views/mailer/ticket_create/da.html.erb
 app/views/mailer/ticket_create/id.html.erb
 app/views/mailer/ticket_create/sr.html.erb
 app/views/mailer/ticket_create/nl.html.erb
@@ -5643,6 +5661,7 @@ app/frontend/apps/desktop/pages/search/components/SearchEmptyMessage.vue
 app/frontend/apps/desktop/pages/search/components/SearchControls.vue
 app/frontend/apps/desktop/pages/search/components/__tests__/SearchEmptyMessage.spec.ts
 app/frontend/apps/desktop/pages/search/components/__tests__/SearchControls.spec.ts
+app/frontend/apps/desktop/pages/search/components/__tests__/SearchEntityFiltersForm.spec.ts
 app/frontend/apps/desktop/pages/search/components/__tests__/SearchContent.spec.ts
 app/frontend/apps/desktop/pages/search/types/searchFilterQuery.ts
 app/frontend/apps/desktop/pages/search/types/searchRouteLink.ts
@@ -6034,6 +6053,7 @@ app/frontend/apps/desktop/pages/ticket/components/TicketSidebar/TicketSidebarExt
 app/frontend/apps/desktop/pages/ticket/components/TicketSidebar/TicketSidebarExternalReferences/TicketSidebarIdoit/__tests__/TicketSidebarIdoit.spec.ts
 app/frontend/apps/desktop/pages/ticket/components/TicketSidebar/TicketSidebarExternalReferences/TicketSidebarExternalIssueTracker/IssueTrackerLinkFlyout.vue
 app/frontend/apps/desktop/pages/ticket/components/TicketSidebar/TicketSidebarExternalReferences/TicketSidebarExternalIssueTracker/IssueTrackerList/IssueTrackerItem/IssueTrackerBadgeList.vue
+app/frontend/apps/desktop/pages/ticket/components/TicketSidebar/TicketSidebarExternalReferences/TicketSidebarExternalIssueTracker/IssueTrackerList/IssueTrackerItem/issueTypeColors.ts
 app/frontend/apps/desktop/pages/ticket/components/TicketSidebar/TicketSidebarExternalReferences/TicketSidebarExternalIssueTracker/IssueTrackerList/IssueTrackerItem.vue
 app/frontend/apps/desktop/pages/ticket/components/TicketSidebar/TicketSidebarExternalReferences/TicketSidebarExternalIssueTracker/useIssueTracker.ts
 app/frontend/apps/desktop/pages/ticket/components/TicketSidebar/TicketSidebarExternalReferences/TicketSidebarExternalIssueTracker/IssueTrackerList.vue
@@ -6069,9 +6089,7 @@ app/frontend/apps/desktop/pages/ticket/components/TicketDetailView/ArticleMeta/t
 app/frontend/apps/desktop/pages/ticket/components/TicketDetailView/ArticleMeta/__tests__/useArticleMeta.spec.ts
 app/frontend/apps/desktop/pages/ticket/components/TicketDetailView/ArticleMeta/__tests__/ArticleMeta.spec.ts
 app/frontend/apps/desktop/pages/ticket/components/TicketDetailView/TimeAccountingFlyout.vue
-app/frontend/apps/desktop/pages/ticket/components/TicketDetailView/ArticleReplyPinned.vue
 app/frontend/apps/desktop/pages/ticket/components/TicketDetailView/ArticleReply.vue
-app/frontend/apps/desktop/pages/ticket/components/TicketDetailView/ArticleReplyUnpinned.vue
 app/frontend/apps/desktop/pages/ticket/components/TicketDetailView/DeliveryMessage.vue
 app/frontend/apps/desktop/pages/ticket/components/TicketDetailView/SystemMessage.vue
 app/frontend/apps/desktop/pages/ticket/components/TicketDetailView/TicketDetailTopBar/TicketDetailTopBar.vue
@@ -6096,6 +6114,7 @@ app/frontend/apps/desktop/pages/ticket/components/TicketDetailView/TicketSimpleT
 app/frontend/apps/desktop/pages/ticket/components/TicketDetailView/TicketSimpleTable/__tests__/TicketSimpleTable.spec.ts
 app/frontend/apps/desktop/pages/ticket/components/TicketDetailView/ArticleReactionBadge.vue
 app/frontend/apps/desktop/pages/ticket/components/TicketDetailView/ArticleMore.vue
+app/frontend/apps/desktop/pages/ticket/components/TicketDetailView/ArticleReplyPanel.vue
 app/frontend/apps/desktop/pages/ticket/components/TicketDetailView/TicketScreenBehavior/behaviorOptions.ts
 app/frontend/apps/desktop/pages/ticket/components/TicketDetailView/TicketScreenBehavior/TicketScreenBehavior.vue
 app/frontend/apps/desktop/pages/ticket/components/TicketDetailView/TicketScreenBehavior/useTicketScreenBehavior.ts
@@ -6157,6 +6176,7 @@ app/frontend/apps/desktop/pages/ticket/components/TicketDetailView/article-type/
 app/frontend/apps/desktop/pages/ticket/components/TicketDetailView/useUnreadArticle.ts
 app/frontend/apps/desktop/pages/ticket/components/TicketDetailView/__tests__/ArticleReply.spec.ts
 app/frontend/apps/desktop/pages/ticket/components/TicketDetailView/__tests__/ArticleMore.spec.ts
+app/frontend/apps/desktop/pages/ticket/components/TicketDetailView/__tests__/TicketDetailScrollToBottomButton.spec.ts
 app/frontend/apps/desktop/pages/ticket/components/TicketDetailView/__tests__/DeliveryMessage.spec.ts
 app/frontend/apps/desktop/pages/ticket/components/TicketDetailView/__tests__/TimeAccountingFlyout.spec.ts
 app/frontend/apps/desktop/pages/ticket/components/TicketDetailView/__tests__/support/article-detail-view-mocks.ts
@@ -6169,6 +6189,7 @@ app/frontend/apps/desktop/pages/ticket/components/TicketDetailView/TicketDetailB
 app/frontend/apps/desktop/pages/ticket/components/TicketDetailView/TicketDetailBottomBar/TicketAgentUpdateButton.vue
 app/frontend/apps/desktop/pages/ticket/components/TicketDetailView/TicketDetailBottomBar/AdditionalTicketEditSubmitActions.vue
 app/frontend/apps/desktop/pages/ticket/components/TicketDetailView/TicketDetailBottomBar/TicketLiveUsers.vue
+app/frontend/apps/desktop/pages/ticket/components/TicketDetailView/TicketDetailScrollToBottomButton.vue
 app/frontend/apps/desktop/pages/ticket/components/TicketLinksFlyout.vue
 app/frontend/apps/desktop/pages/ticket/components/TicketSharedDraftFlyout.vue
 app/frontend/apps/desktop/pages/ticket/components/TicketCreate/TicketDuplicateDetectionAlert.vue
@@ -6365,6 +6386,7 @@ app/frontend/apps/desktop/initializer/assets/arrow-bar-right.svg
 app/frontend/apps/desktop/initializer/assets/ai-knowledge-base.svg
 app/frontend/apps/desktop/initializer/assets/play-circle.svg
 app/frontend/apps/desktop/initializer/assets/check-circle-outline.svg
+app/frontend/apps/desktop/initializer/assets/lock-fill.svg
 app/frontend/apps/desktop/initializer/assets/files.svg
 app/frontend/apps/desktop/initializer/assets/check-circle-no-ai.svg
 app/frontend/apps/desktop/initializer/assets/image.svg
@@ -6516,6 +6538,7 @@ app/frontend/apps/desktop/initializer/assets/phone-pencil.svg
 app/frontend/apps/desktop/initializer/assets/chat-left-text.svg
 app/frontend/apps/desktop/initializer/assets/calendar-range.svg
 app/frontend/apps/desktop/initializer/assets/ai-agent.svg
+app/frontend/apps/desktop/initializer/assets/plus.svg
 app/frontend/apps/desktop/initializer/assets/phone.svg
 app/frontend/apps/desktop/initializer/assets/delete-column.svg
 app/frontend/apps/desktop/initializer/assets/gear.svg
@@ -6609,7 +6632,6 @@ app/frontend/apps/desktop/composables/responsiveness/useAppBreakpoints.ts
 app/frontend/apps/desktop/composables/responsiveness/useMobileNavigation.ts
 app/frontend/apps/desktop/composables/responsiveness/useMobileDetection.ts
 app/frontend/apps/desktop/composables/responsiveness/__tests__/useMobileDetection.spec.ts
-app/frontend/apps/desktop/composables/BetaUi/useAppUsage.ts
 app/frontend/apps/desktop/composables/BetaUi/useTimeTracker.ts
 app/frontend/apps/desktop/composables/accessibility/useAnnouncer.ts
 app/frontend/apps/desktop/composables/accessibility/types.ts
@@ -6635,7 +6657,6 @@ app/frontend/apps/desktop/router/index.ts
 app/frontend/apps/desktop/router/guards/before/activeTaskbarTab.ts
 app/frontend/apps/desktop/router/guards/before/__tests__/systemSetupInfo.spec.ts
 app/frontend/apps/desktop/router/guards/before/systemSetupInfo.ts
-app/frontend/apps/desktop/plugins/directives/__tests__/tooltip.spec.ts
 app/frontend/apps/desktop/components/layout/useSidebarDisplay.ts
 app/frontend/apps/desktop/components/layout/LayoutPage.vue
 app/frontend/apps/desktop/components/layout/LayoutSidebar/LeftSidebar/LeftSidebarHeader.vue
@@ -6679,12 +6700,15 @@ app/frontend/apps/desktop/components/layout/LayoutBottomBar.vue
 app/frontend/apps/desktop/components/layout/LayoutPublicPage/LayoutPublicPage.vue
 app/frontend/apps/desktop/components/layout/LayoutPublicPage/LayoutPublicPageBoxActions.vue
 app/frontend/apps/desktop/components/layout/LayoutContent.vue
+app/frontend/apps/desktop/components/layout/stores/sidebarDisplay.ts
+app/frontend/apps/desktop/components/layout/stores/__tests__/sidebarDisplay.spec.ts
 app/frontend/apps/desktop/components/layout/LayoutMain.vue
 app/frontend/apps/desktop/components/layout/LayoutSidebar.vue
 app/frontend/apps/desktop/components/layout/types.ts
 app/frontend/apps/desktop/components/layout/__tests__/LayoutContent.spec.ts
 app/frontend/apps/desktop/components/layout/__tests__/LayoutPage.spec.ts
 app/frontend/apps/desktop/components/layout/__tests__/LayoutPublicPage.spec.ts
+app/frontend/apps/desktop/components/layout/__tests__/useSidebarDisplay.spec.ts
 app/frontend/apps/desktop/components/layout/__tests__/LayoutSidebar.spec.ts
 app/frontend/apps/desktop/components/layout/LayoutTaskbarTabContent.vue
 app/frontend/apps/desktop/components/Search/graphql/queries/searchCounts.mocks.ts
@@ -6955,11 +6979,11 @@ app/frontend/apps/desktop/components/CommonHistoryFlyout/event-actions/updated.t
 app/frontend/apps/desktop/components/CommonHistoryFlyout/event-actions/received-merge.ts
 app/frontend/apps/desktop/components/CommonHistoryFlyout/event-actions/checklist-item-checked.ts
 app/frontend/apps/desktop/components/CommonHistoryFlyout/event-actions/merged-into.ts
-app/frontend/apps/desktop/components/CommonHistoryFlyout/event-actions/notification.ts
 app/frontend/apps/desktop/components/CommonHistoryFlyout/event-actions/set.ts
 app/frontend/apps/desktop/components/CommonHistoryFlyout/event-actions/email.ts
 app/frontend/apps/desktop/components/CommonHistoryFlyout/event-actions/removed-mention.ts
 app/frontend/apps/desktop/components/CommonHistoryFlyout/event-actions/time-trigger-performed.ts
+app/frontend/apps/desktop/components/CommonHistoryFlyout/event-actions/notified.ts
 app/frontend/apps/desktop/components/CommonHistoryFlyout/event-actions/created-mention.ts
 app/frontend/apps/desktop/components/CommonHistoryFlyout/event-actions/added.ts
 app/frontend/apps/desktop/components/CommonHistoryFlyout/event-actions/created.ts
@@ -6997,9 +7021,13 @@ app/frontend/apps/desktop/components/Form/fields/FieldFilterSelector/index.ts
 app/frontend/apps/desktop/components/Form/fields/FieldFilterSelector/FieldFilterSelectorInput.vue
 app/frontend/apps/desktop/components/Form/fields/FieldFilterSelector/operators/is.ts
 app/frontend/apps/desktop/components/Form/fields/FieldFilterSelector/operators/index.ts
+app/frontend/apps/desktop/components/Form/fields/FieldFilterSelector/operators/within-last-relative.ts
+app/frontend/apps/desktop/components/Form/fields/FieldFilterSelector/operators/in-range.ts
 app/frontend/apps/desktop/components/Form/fields/FieldFilterSelector/operators/contains-one.ts
 app/frontend/apps/desktop/components/Form/fields/FieldFilterSelector/operators/matches.ts
+app/frontend/apps/desktop/components/Form/fields/FieldFilterSelector/operators/__tests__/within-last-relative.spec.ts
 app/frontend/apps/desktop/components/Form/fields/FieldFilterSelector/operators/__tests__/contains-one.spec.ts
+app/frontend/apps/desktop/components/Form/fields/FieldFilterSelector/operators/__tests__/in-range.spec.ts
 app/frontend/apps/desktop/components/Form/fields/FieldFilterSelector/operators/__tests__/is.spec.ts
 app/frontend/apps/desktop/components/Form/fields/FieldFilterSelector/types.ts
 app/frontend/apps/desktop/components/Form/fields/FieldFilterSelector/__tests__/FieldFilterSelector.spec.ts
@@ -7071,11 +7099,8 @@ app/frontend/apps/desktop/components/Form/fields/FieldToggleButtons/__tests__/Fi
 app/frontend/apps/desktop/components/Form/fields/FieldRecipient/index.ts
 app/frontend/apps/desktop/components/Form/fields/FieldRecipient/FieldRecipientWrapper.vue
 app/frontend/apps/desktop/components/Form/fields/FieldRecipient/__tests__/FieldRecipient.spec.ts
-app/frontend/apps/desktop/components/CollapseButton/useCollapseHandler.ts
 app/frontend/apps/desktop/components/CollapseButton/CollapseButton.vue
-app/frontend/apps/desktop/components/CollapseButton/types.ts
 app/frontend/apps/desktop/components/CollapseButton/__tests__/CollapseButton.spec.ts
-app/frontend/apps/desktop/components/CollapseButton/__tests__/useCollapseHandler.spec.ts
 app/frontend/apps/desktop/components/CommonConfirmationDialog/CommonConfirmationDialog.vue
 app/frontend/apps/desktop/components/CommonConfirmationDialog/initializeConfirmationDialog.ts
 app/frontend/apps/desktop/components/CommonConfirmationDialog/types.ts
@@ -7559,7 +7584,6 @@ app/frontend/apps/mobile/router/index.ts
 app/frontend/apps/mobile/router/guards/before/viewTransition.ts
 app/frontend/apps/mobile/router/guards/before/__test__/viewTransition.spec.ts
 app/frontend/apps/mobile/sw/sw.ts
-app/frontend/apps/mobile/plugins/directives/__tests__/tooltip.spec.ts
 app/frontend/apps/mobile/components/layout/LayoutBottomNavigation.vue
 app/frontend/apps/mobile/components/layout/useCustomLayout.ts
 app/frontend/apps/mobile/components/layout/LayoutHeader.vue
@@ -8272,7 +8296,6 @@ app/frontend/shared/initializer/initializeUserAvatarClasses.ts
 app/frontend/shared/initializer/initializeLinkClasses.ts
 app/frontend/shared/initializer/initializeNotificationClasses.ts
 app/frontend/shared/initializer/initializeBadgeClasses.ts
-app/frontend/shared/initializer/initializeDirectives.ts
 app/frontend/shared/initializer/initializeFakeTimer.ts
 app/frontend/shared/initializer/initializeOrganizationAvatarClasses.ts
 app/frontend/shared/initializer/initializeAlertClasses.ts
@@ -8348,7 +8371,6 @@ app/frontend/shared/form/features/formLocaleDir.ts
 app/frontend/shared/form/features/defaultEmptyValueString.ts
 app/frontend/shared/form/features/removeValuesForNonExistingOrDisabledOptions.ts
 app/frontend/shared/form/features/hideField.ts
-app/frontend/shared/form/features/defaultEmptyValue.ts
 app/frontend/shared/form/features/defaultEmptyValueArray.ts
 app/frontend/shared/form/features/setPopulatedOnWebkitAutofill.ts
 app/frontend/shared/form/features/translateWrapperProps.ts
@@ -8363,8 +8385,6 @@ app/frontend/shared/form/utils/extendSchemaDefinition.ts
 app/frontend/shared/form/defineFormSchema.ts
 app/frontend/shared/form/useFormBlock.ts
 app/frontend/shared/form/validation/rules/.keep
-app/frontend/shared/form/validation/rules/date-range.ts
-app/frontend/shared/form/validation/rules/__tests__/date-range.spec.ts
 app/frontend/shared/form/theme/global/index.ts
 app/frontend/shared/form/theme/global/extensions/.keep
 app/frontend/shared/form/i18n/locales.ts
@@ -8429,6 +8449,7 @@ app/frontend/shared/composables/activity-message/activityMessageBuilder/builders
 app/frontend/shared/composables/activity-message/activityMessageBuilder/types.ts
 app/frontend/shared/composables/activity-message/activityMessageBuilder/__tests__/activityMessageBuilder.spec.ts
 app/frontend/shared/composables/activity-message/useActivityMessage.ts
+app/frontend/shared/composables/activity-message/__tests__/useActivityMessage.spec.ts
 app/frontend/shared/composables/useTraverseOptions.ts
 app/frontend/shared/composables/useImageViewer.ts
 app/frontend/shared/composables/useHtmlLinks.ts
@@ -8504,6 +8525,9 @@ app/frontend/shared/sw/register.ts
 app/frontend/shared/sw/types.ts
 app/frontend/shared/plugins/directives/directives.d.ts
 app/frontend/shared/plugins/directives/tooltip/index.ts
+app/frontend/shared/plugins/directives/tooltip/types.ts
+app/frontend/shared/plugins/directives/types.ts
+app/frontend/shared/plugins/directives/__tests__/tooltip.spec.ts
 app/frontend/shared/plugins/applicationConfigPlugin.ts
 app/frontend/shared/components/CommonTranslateRenderer/CommonTranslateRenderer.vue
 app/frontend/shared/components/CommonTranslateRenderer/types.ts
@@ -8658,6 +8682,7 @@ app/frontend/shared/components/Form/fields/FieldEditor/composables/useAttachment
 app/frontend/shared/components/Form/fields/FieldEditor/composables/useNavigateOptions.ts
 app/frontend/shared/components/Form/fields/FieldEditor/composables/useSignatureHandling.ts
 app/frontend/shared/components/Form/fields/FieldEditor/composables/useEditorActionHelper.ts
+app/frontend/shared/components/Form/fields/FieldEditor/composables/useSuggestionTyping.ts
 app/frontend/shared/components/Form/fields/FieldEditor/FieldEditorWrapper.vue
 app/frontend/shared/components/Form/fields/FieldEditor/FieldEditorInput.vue
 app/frontend/shared/components/Form/fields/FieldEditor/FieldEditorFooter.vue
@@ -8709,8 +8734,12 @@ app/frontend/shared/components/Form/fields/FieldOrganization/useFieldOrganizatio
 app/frontend/shared/components/Form/fields/FieldOrganization/types.ts
 app/frontend/shared/components/Form/fields/FieldDate/useDateTime.ts
 app/frontend/shared/components/Form/fields/FieldDate/useDateFnsLocale.ts
+app/frontend/shared/components/Form/fields/FieldDate/usePickerModel.ts
+app/frontend/shared/components/Form/fields/FieldDate/healDateRange.ts
 app/frontend/shared/components/Form/fields/FieldDate/types.ts
+app/frontend/shared/components/Form/fields/FieldDate/__tests__/usePickerModel.spec.ts
 app/frontend/shared/components/Form/fields/FieldDate/__tests__/useDateFnsLocale.spec.ts
+app/frontend/shared/components/Form/fields/FieldDate/__tests__/healDateRange.spec.ts
 app/frontend/shared/components/Form/fields/FieldFile/graphql/mutations/uploadCache/add.graphql
 app/frontend/shared/components/Form/fields/FieldFile/graphql/mutations/uploadCache/remove.api.ts
 app/frontend/shared/components/Form/fields/FieldFile/graphql/mutations/uploadCache/remove.graphql
@@ -8762,6 +8791,7 @@ app/frontend/shared/components/Form/__tests__/apps/desktop/form-updater.desktop.
 app/frontend/shared/components/Form/__tests__/apps/mobile/form-updater.mobile.spec.ts
 app/frontend/shared/components/Form/__tests__/mocks/additionalFrontendObjectAttributes.json
 app/frontend/shared/components/Form/__tests__/Form.spec.ts
+app/frontend/shared/components/Form/__tests__/utils.spec.ts
 app/frontend/shared/components/Form/__tests__/useForm.spec.ts
 app/frontend/shared/components/Form/types/field.ts
 app/frontend/shared/components/Form/useForm.ts
@@ -9385,6 +9415,7 @@ db/migrate/20170123000001_ui_ticket_zoom_article_new_internal.rb
 db/migrate/20170119000001_login_email_length_650.rb
 db/migrate/20210929161701_reload_after_core_workflow.rb
 db/migrate/20220929130033_ticket_overview_ticket_limit_setting.rb
+db/migrate/20260605123514_issue6185_text_module_permission_label.rb
 db/migrate/20200923092140_issue3195_inconsistent_granular_agent_permissions_chat.rb
 db/migrate/20180911064647_issue_2140_reset_ldap_config.rb
 db/migrate/20220624173829_setting_password_login.rb
@@ -9467,6 +9498,7 @@ db/migrate/20161117000002_ticket_number_generator_issue_427.rb
 db/migrate/20170116000002_fixed_typos_622.rb
 db/migrate/20170130000001_follow_up_possible_check_643.rb
 db/migrate/20250717122734_ticket_summary_generation.rb
+db/migrate/20260610124637_issue6187_rename_postmaster_pre_filter_setting_keys.rb
 db/migrate/20240202122403_issue5028_body_required.rb
 db/migrate/20180919000000_setting_update_pretty_date_format.rb
 db/migrate/20180418000001_setting_third_party_link_account_at_login.rb
@@ -9495,6 +9527,7 @@ db/migrate/20210311130946_remove_unfixable_generic_oauth2_login.rb
 db/migrate/20230622095629_drop_models_searchable_setting.rb
 db/migrate/20231016120344_search_index_settings.rb
 db/migrate/20230823082823_update_format_settings.rb
+db/migrate/20260529101015_signature_convert_images_to_cid.rb
 db/migrate/20221006075341_drop_karma.rb
 db/migrate/20210728103633_move_auth_backends_to_database.rb
 db/migrate/20230508101744_tech_debt_297_three_state_boolean.rb
@@ -9818,7 +9851,7 @@ spec/models/ai/agent/type/ticket_group_dispatcher_spec.rb
 spec/models/ai/agent/type/ticket_text_extractor_spec.rb
 spec/models/ai/agent/type/ticket_categorizer_spec.rb
 spec/models/ai/agent_spec.rb
-spec/models/ai/stored_results_spec.rb
+spec/models/ai/stored_result_spec.rb
 spec/models/ai/analytics/usage_spec.rb
 spec/models/ai/analytics/run_spec.rb
 spec/models/object_manager_spec.rb
@@ -9871,6 +9904,7 @@ spec/models/knowledge_base/category/translation_spec.rb
 spec/models/knowledge_base/answer/translation_spec.rb
 spec/models/knowledge_base/answer/translation/search_with_attachment_spec.rb
 spec/models/knowledge_base/answer/translation/content_spec.rb
+spec/models/knowledge_base/answer/translation/search_spec.rb
 spec/models/knowledge_base/permission_spec.rb
 spec/models/knowledge_base/locale_spec.rb
 spec/models/job_spec.rb
@@ -10189,6 +10223,7 @@ spec/graphql/gql/types/email_address_parsed_type_spec.rb
 spec/graphql/gql/types/ticket/shared_draft_start_type_spec.rb
 spec/graphql/gql/record_loader_spec.rb
 spec/controllers/integration/exchange_spec.rb
+spec/controllers/application_controller/has_user_spec.rb
 spec/controllers/application_controller/has_download/download_file_spec.rb
 spec/controllers/can_paginate/pagination_spec.rb
 spec/jobs/trigger_webhook_job/record_payload_spec.rb
@@ -10259,6 +10294,7 @@ spec/rubocop/cop/zammad/migration_scheduler_last_run_spec.rb
 spec/rubocop/cop/zammad/forbid_redis_client_spec.rb
 spec/rubocop/cop/zammad/graphql_authorize_requires_permission_spec.rb
 spec/rubocop/cop/zammad/enforce_in_modal_spec.rb
+spec/rubocop/cop/zammad/forbid_unprocessable_entity_spec.rb
 spec/rubocop/cop/zammad/migration_ensure_integer_primary_key_spec.rb
 spec/rubocop/cop/zammad/graphql_forbid_sensitive_fields_spec.rb
 spec/support/capybara/custom_extensions.rb
@@ -10604,12 +10640,13 @@ spec/lib/facebook_spec.rb
 spec/lib/background_services_spec.rb
 spec/lib/password_policy_spec.rb
 spec/lib/text/quote_remover_spec.rb
+spec/lib/text/content_cleanup_spec.rb
 spec/lib/certificate/apply_ssl_certificates_spec.rb
 spec/lib/certificate/x509/smime_spec.rb
 spec/lib/user_agent_spec.rb
 spec/lib/microsoft_graph/api_error_spec.rb
 spec/lib/timeplan_calculation_spec.rb
-spec/lib/active_model/errors_spec.rb
+spec/lib/active_model/error_spec.rb
 spec/lib/tasks/zammad/command_spec.rb
 spec/lib/tasks/zammad/db/max_connections_spec.rb
 spec/lib/tasks/zammad/store/move_files_spec.rb
@@ -10672,6 +10709,7 @@ spec/lib/ai/provider/concerns/handles_open_ai_messages_spec.rb
 spec/lib/ai/provider/shared_examples/check_temperature_support.rb
 spec/lib/ai/provider/shared_examples/ping.rb
 spec/lib/ai/provider/shared_examples/model_supports_temperature.rb
+spec/lib/ai/provider/shared_examples/embed.rb
 spec/lib/ai/vectordb_spec.rb
 spec/lib/ai/service/ai_agent_spec.rb
 spec/lib/ai/service/text_tool_spec.rb
@@ -11024,6 +11062,7 @@ spec/services/service/ai/agent/run/context/instruction/object_attributes/options
 spec/services/service/ai/agent/run/context_spec.rb
 spec/services/service/ai/agent/run_spec.rb
 spec/services/service/ai/vectordb/rebuild_spec.rb
+spec/services/service/ai/vectordb/content/chunks_spec.rb
 spec/services/service/ai/vectordb/create_table_spec.rb
 spec/services/service/ai/vectordb/reload_spec.rb
 spec/services/service/ai/vectordb/similarity_search_spec.rb
@@ -11126,6 +11165,7 @@ spec/db/migrate/issue_3346_xoauth2_token_not_fetched_spec.rb
 spec/db/migrate/issue_3550_set_pretty_spec.rb
 spec/db/migrate/issue_3627_outdated_urls_security_page_spec.rb
 spec/db/migrate/issue_4243_permission_fix_spec.rb
+spec/db/migrate/signature_convert_images_to_cid_spec.rb
 spec/db/migrate/issue_1219_zhtw_locale_typo_spec.rb
 spec/db/migrate/update_api_password_access_frontend_spec.rb
 spec/db/migrate/remove_duplicate_translations_spec.rb
@@ -11149,6 +11189,7 @@ spec/db/migrate/geo_location_backend_osm_spec.rb
 spec/db/migrate/object_manager_update_user_password_spec.rb
 spec/db/migrate/issue_2345_es_attachment_max_size_in_mb_setting_lower_default_spec.rb
 spec/db/migrate/move_checklist_ticket_relation_to_ticket_spec.rb
+spec/db/migrate/checklist_tables_wrong_column_type_spec.rb
 spec/db/migrate/issue_4316_template_options_migration_spec.rb
 spec/db/migrate/change_to_ai_provider_flag_spec.rb
 spec/db/migrate/issue_4410_account_linking_notification_spec.rb
@@ -11177,7 +11218,6 @@ spec/db/migrate/issue_5908_cleanup_ticket_ai_agent_running_falgs_spec.rb
 spec/db/migrate/cleanup_obsolete_translations_spec.rb
 spec/db/migrate/auth_third_party_no_create_user_spec.rb
 spec/db/migrate/issue_5091_timezone_default_spec.rb
-spec/db/migrate/20250827060616_checklist_tables_wrong_column_type_spec.rb
 spec/db/migrate/tech_debt297_three_state_boolean_spec.rb
 spec/db/migrate/add_checklist_item_ticket_association_spec.rb
 spec/db/migrate/issue_3617_user_image_source_fix_spec.rb
@@ -11239,6 +11279,7 @@ spec/policies/controllers/ai/analytics/downloads_controller_policy_spec.rb
 spec/policies/controllers/knowledge_base/categories_controller_policy_spec.rb
 spec/policies/controllers/knowledge_base/feeds_controller_policy_spec.rb
 spec/policies/controllers/knowledge_base/answers_controller_policy_spec.rb
+spec/policies/controllers/knowledge_base/answer/attachments_controller_policy_spec.rb
 spec/policies/controllers/tags_controller_policy_spec.rb
 spec/policies/controllers/monitoring_controller_policy_spec.rb
 spec/policies/controllers/time_accountings_controller_policy_spec.rb
@@ -11574,6 +11615,8 @@ spec/fixtures/files/ai/text_tool/input007.json
 spec/fixtures/files/ai/text_tool/input009.json
 spec/fixtures/files/ai/text_tool/input010.json
 spec/fixtures/files/ai/text_tool/input013.json
+spec/fixtures/files/ai/vectordb/content/long-text-002.html
+spec/fixtures/files/ai/vectordb/content/long-text-001.html
 spec/fixtures/files/pgp/zammad@localhost.revoker.fingerprint
 spec/fixtures/files/pgp/zammad@localhost.revoker.pgp
 spec/fixtures/files/pgp/noexpirepgp1@example.com.pgp
@@ -11805,6 +11848,7 @@ spec/system/admin/ai/ticket_summary_spec.rb
 spec/system/admin/knowledge_base/public_menu_spec.rb
 spec/system/admin/knowledge_base/theme_spec.rb
 spec/system/admin/knowledge_base/create_spec.rb
+spec/system/admin/knowledge_base/remove_language_spec.rb
 spec/system/admin/knowledge_base/delete_spec.rb
 spec/system/overview/attribute_spec.rb
 spec/system/apps/desktop/guided_setup_spec.rb
