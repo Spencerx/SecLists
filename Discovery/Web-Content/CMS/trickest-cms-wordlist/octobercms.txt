@@ -795,6 +795,7 @@ modules/system/tests/classes/VersionManagerTest.php
 modules/system/tests/twig/SafeSessionStoreTest.php
 modules/system/tests/twig/SafeRequestTest.php
 modules/system/tests/twig/SecurityPolicyRequestTest.php
+modules/system/tests/twig/GetAttrNodeSafeCastTest.php
 modules/system/tests/twig/SecurityPolicySessionStoreTest.php
 modules/system/tests/twig/SecurityPolicyRawSqlBlocklistTest.php
 modules/system/tests/bootstrap.php
@@ -1114,6 +1115,7 @@ modules/system/classes/presetmanager/icons-phosphor.json
 modules/system/classes/presetmanager/Dates.php
 modules/system/classes/presetmanager/Icons.php
 modules/system/classes/PagerElement.php
+modules/system/classes/resizeimages/ValidatesExternalImages.php
 modules/system/classes/ModelBehavior.php
 modules/system/classes/ManifestCache.php
 modules/system/classes/DriverBehavior.php

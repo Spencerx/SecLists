@@ -4099,6 +4099,11 @@ system/tests/twig/SecurityPolicyRequestTest.php
 tests/twig/SecurityPolicyRequestTest.php
 twig/SecurityPolicyRequestTest.php
 SecurityPolicyRequestTest.php
+modules/system/tests/twig/GetAttrNodeSafeCastTest.php
+system/tests/twig/GetAttrNodeSafeCastTest.php
+tests/twig/GetAttrNodeSafeCastTest.php
+twig/GetAttrNodeSafeCastTest.php
+GetAttrNodeSafeCastTest.php
 modules/system/tests/twig/SecurityPolicySessionStoreTest.php
 system/tests/twig/SecurityPolicySessionStoreTest.php
 tests/twig/SecurityPolicySessionStoreTest.php
@@ -5604,6 +5609,11 @@ modules/system/classes/PagerElement.php
 system/classes/PagerElement.php
 classes/PagerElement.php
 PagerElement.php
+modules/system/classes/resizeimages/ValidatesExternalImages.php
+system/classes/resizeimages/ValidatesExternalImages.php
+classes/resizeimages/ValidatesExternalImages.php
+resizeimages/ValidatesExternalImages.php
+ValidatesExternalImages.php
 modules/system/classes/ModelBehavior.php
 system/classes/ModelBehavior.php
 classes/ModelBehavior.php

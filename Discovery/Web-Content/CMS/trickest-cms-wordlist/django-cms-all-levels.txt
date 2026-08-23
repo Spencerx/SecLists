@@ -2570,6 +2570,9 @@ apphook_reload.py
 cms/utils/page.py
 utils/page.py
 page.py
+cms/utils/mptree.py
+utils/mptree.py
+mptree.py
 cms/utils/urlutils.py
 utils/urlutils.py
 urlutils.py
@@ -2688,6 +2691,9 @@ test_menu_page_viewperm.py
 cms/tests/test_wizards.py
 tests/test_wizards.py
 test_wizards.py
+cms/tests/test_mptree_backend.py
+tests/test_mptree_backend.py
+test_mptree_backend.py
 cms/tests/test_signals.py
 tests/test_signals.py
 test_signals.py
@@ -2727,6 +2733,9 @@ test_views.py
 cms/tests/test_apphook_reload_language_variants.py
 tests/test_apphook_reload_language_variants.py
 test_apphook_reload_language_variants.py
+cms/tests/test_csp.py
+tests/test_csp.py
+test_csp.py
 cms/tests/test_nested_plugins.py
 tests/test_nested_plugins.py
 test_nested_plugins.py
@@ -2772,6 +2781,9 @@ test_admin.py
 cms/tests/test_i18n.py
 tests/test_i18n.py
 test_i18n.py
+cms/tests/test_staticfiles.py
+tests/test_staticfiles.py
+test_staticfiles.py
 cms/tests/test_templatetags.py
 tests/test_templatetags.py
 test_templatetags.py
@@ -3325,6 +3337,9 @@ test_page_user_admin.py
 cms/tests/test_plugin_renderers.py
 tests/test_plugin_renderers.py
 test_plugin_renderers.py
+cms/tests/test_permission_signals.py
+tests/test_permission_signals.py
+test_permission_signals.py
 cms/tests/test_menu_utils.py
 tests/test_menu_utils.py
 test_menu_utils.py
@@ -6970,6 +6985,9 @@ how_to/11-apphooks.rst
 docs/how_to/09-custom_plugins.rst
 how_to/09-custom_plugins.rst
 09-custom_plugins.rst
+docs/how_to/25-content_security_policy.rst
+how_to/25-content_security_policy.rst
+25-content_security_policy.rst
 docs/how_to/02-languages.rst
 how_to/02-languages.rst
 02-languages.rst

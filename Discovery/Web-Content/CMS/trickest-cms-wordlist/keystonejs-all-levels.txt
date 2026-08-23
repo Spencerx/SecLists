@@ -2,8 +2,6 @@ CONTRIBUTING.md
 pnpm-workspace.yaml
 .oxlintrc.json
 SECURITY.md
-.changeset/fix-document-uris.mx
-fix-document-uris.mx
 .changeset/README.md
 README.md
 .changeset/contributors.json
@@ -183,6 +181,10 @@ tests/test-projects/basic/keystone.ts
 test-projects/basic/keystone.ts
 basic/keystone.ts
 keystone.ts
+tests/test-projects/basic/custom-cell.tsx
+test-projects/basic/custom-cell.tsx
+basic/custom-cell.tsx
+custom-cell.tsx
 tests/test-projects/basic/schema.ts
 test-projects/basic/schema.ts
 basic/schema.ts
@@ -880,6 +882,9 @@ field-groups.test.ts
 tests/examples-smoke-tests/custom-admin-ui-pages.test.ts
 examples-smoke-tests/custom-admin-ui-pages.test.ts
 custom-admin-ui-pages.test.ts
+tests/examples-smoke-tests/framework-nextjs-pages-directory.test.ts
+examples-smoke-tests/framework-nextjs-pages-directory.test.ts
+framework-nextjs-pages-directory.test.ts
 tests/examples-smoke-tests/utils.ts
 examples-smoke-tests/utils.ts
 utils.ts
